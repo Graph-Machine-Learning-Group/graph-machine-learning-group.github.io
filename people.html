@@ -1,0 +1,59 @@
+---
+layout: default
+---
+{% assign people = site.data.people %}
+<!-- Header-->
+<header class="text-white transparent-background">
+    <div class="container px-4 text-center">
+        <h1 class="fw-bolder">Meet us</h1>
+        <p class="lead">The people of GMLG</p>
+    </div>
+</header>
+<!-- Admin section-->
+<section>
+    <div class="container px-4">
+        <div class="row g-4 justify-content-center align-items-center text-center text-md-start">
+            {% assign admin = people | where: "group", "admin" | first %}
+            {% include admin_item.html admin=admin %}
+        </div>
+    </div>
+</section>
+<!-- Staff section-->
+<section class="bg-light">
+    <div class="container px-4">
+        <div class="row g-4 justify-content-center align-items-top text-center">
+            <div class="col-12"><h2>Staff</h2></div>
+            {% assign staff = people | where: "group", "staff" %}
+            {% for person in staff %}
+                {% include people_item.html person=person %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- External section-->
+<section>
+    <div class="container px-4">
+        <div class="row g-4 justify-content-center align-items-top text-center">
+            <div class="col-12"><h2>External</h2></div>
+            {% assign external = people | where: "group", "external" %}
+            {% for person in external %}
+                {% include people_item.html person=person %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- Alumni section-->
+<section class="bg-light">
+    <div class="container px-4">
+        <div class="row g-4 justify-content-center align-items-top">
+            <div class="col-12 text-center"><h2>Alumni</h2></div>
+            <ul>
+            {% assign alumni = people | where: "group", "alumni" %}
+            {% for person in alumni %}
+                <li><a href="{{person.links.website}}">{{person.name}} <strong>{{person.surname}}</strong></a>, {{person.now}}.<br>
+                    {{person.description}} ({{person.period}})</li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>

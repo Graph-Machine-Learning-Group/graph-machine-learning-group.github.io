@@ -1,0 +1,84 @@
+---
+layout: default
+---
+<!-- Header-->
+<header class="text-white transparent-background">
+    <div class="container px-4 text-center">
+        <div class="row g-4 justify-content-center align-items-top text-center">
+            <div class="col-lg-8">
+                <div class="logo"><img src="{{site.url}}/assets/img/logo/logo.svg" alt="Graph Machine Learning Group" /></div>
+                <h1 class="fw-bolder">Graph Machine Learning Group</h1>
+                <p class="lead">Graph machine learning &bull; Non-stationary environments &bull; Spatiotemporal data &bull; Reinforcement learning &bull; Dynamical systems</p>
+                <p><a href="https://usi.ch" class="text-white"><i><svg class="bi me-2 align-top" width="1.25rem" height="1.25rem" fill="currentColor">
+                                <use xlink:href="#usi-icon" /></svg></i>Università della Svizzera italiana</a></p>
+            </div>
+        </div>
+</header>
+<!-- About section-->
+<section id="about">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>About GMLG</h2>
+                <p class="lead">We are a research team part of the <a href="http://www.idsia.ch/">Swiss AI Lab (IDSIA)</a> at <a href="https://usi.ch/">Università della Svizzera italiana</a>, Lugano, Switzerland. The group is led by Prof. Cesare Alippi.</p>
+                <a  class="btn btn-outline-primary" href="{{site.url}}/people.html" role="button">Meet our team</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- News section-->
+<section class="bg-light">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-center">News</h2>
+                <ul style="padding-left: 6rem;">
+                    {% for news in site.data.news limit:3 %}
+                    <li style="list-style: '{{news.date}} &bull; ';">{{news.text}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Research section-->
+<section class="text-white transparent-background">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>Research</h2>
+                <p class="lead">Our research focuses on <mark>graph machine learning</mark>, <mark>non-stationary environments</mark>, <mark>dynamical systems</mark>, and <mark>reinforcement learning</mark>.<br>
+                We also apply machine learning in many diverse fields, including neuroscience, power grids, chemistry, and agriculture, among many others.</p>
+                <a  class="btn btn-outline-light" href="{{site.url}}/publications.html" role="button">Our publications</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Open Source section-->
+<section id="contact">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>Open Source</h2>
+                <p class="lead">Our group is active in open source software development and we maintain several Python libraries based on our research. Check out also the <a href="https://github.com/Graph-Machine-Learning-Group">group GitHub page</a> for code related to our papers.</p>
+                <div class="card-series">
+                    {% for os_project in site.data.open_source %}
+                    <div class="card horizontal-card">
+                        <div class="horizontal-card-image">
+                            <img src="{{site.url}}/assets/img/open_source/{{os_project.img}}" alt="" />
+                        </div>
+                        <div class="horizontal-card-content">
+                            <h5 class="horizontal-card-title"><b>{{os_project.name}}</b></h5>
+                            <p>{{os_project.description}}</p>
+                            <div class="horizontal-card-action">
+                                {% include links_list.html links=os_project.links%}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <p class="text-muted">The development of Spektral and CDG was supported by project ALPSFORT (200021 172671) of the Swiss National Science Foundation.</p>
+            </div>
+        </div>
+    </div>
+</section>

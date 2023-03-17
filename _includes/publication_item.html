@@ -1,0 +1,58 @@
+{% assign people = site.data.people %}
+{% assign index = include.index %}
+{% assign publication = include.publication %}
+{% assign pub_id = "pub_" | append: index %}
+{% assign pub_venue = publication.venue | downcase | strip %}
+<div class="publication-item" data-year="{{publication.year}}">
+    <div class="publication-item-title h5">{{publication.title | strip}}</div>
+    {% if pub_venue != "preprint" %}
+    <div class="publication-item-venue h6 text-muted fw-light">{{publication.venue | strip}}, {{publication.year}}</div>
+    {% endif %}
+    <div class="publication-item-authors">
+    {% for author in publication.authors %}
+        {% assign auth_name = author | split: ":" %}
+        {% if auth_name[0] == 'id' %}
+            {% assign full_author = people | where: "id", auth_name[1] | first %}
+            {% assign authorNames = full_author.name | split: ' ' %}
+            {% capture authorName %}<a href="{{full_author.links.website}}">{% for an in authorNames %}{{an | slice: 0}}. {% endfor %}{{ full_author.surname }}</a>{% endcapture %}
+            {% assign authorId = auth_name[1] %}
+        {% else %}
+            {% assign authorName = author %}
+            {% assign authorId = '' %}
+        {% endif %}
+        <div class="publication-item-author {%if forloop.index0 < publication.first_authors%}equal-contrib{% endif %}" author-id="{{authorId}}">{{ authorName }}{%if forloop.index0 < publication.first_authors%}<sup>*</sup>{% endif %}{%unless forloop.last%},{% endunless %}</div>
+    {% endfor %}
+    </div>
+    <div class="publication-item-links">
+        {% if publication.abstract %}
+        <a class="text-primary" role="button" data-bs-toggle="offcanvas" data-bs-target="#{{pub_id}}" aria-expanded="false" aria-controls="{{pub_id}}">🔍 Show abstract</a>
+        {% endif %}
+        {% if publication.links.paper %}
+        <a class="text-primary" href="{{publication.links.paper}}" target="_blank">📄 Paper</a>
+        {% endif %}
+        {% if publication.links.code %}
+        <a class="text-primary" href="{{publication.links.code}}" target="_blank">💻 Code</a>
+        {% endif %}
+    </div>
+    {% if publication.keywords %}
+    <div class="publication-item-keywords">
+        {% if pub_venue == "preprint" %}
+        <span class="badge bg-warning text-dark">Preprint</span>
+        {% endif %}
+        {% for keyword in publication.keywords %}
+        <span class="badge bg-primary text-white fw-normal" keyword-id="{{keyword | downcase | strip | replace: ' ', '-'}}">{{keyword | strip | capitalize}}</span>
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% if publication.abstract %}
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="{{pub_id}}" aria-labelledby="{{pub_id}}-label">
+        <div class="offcanvas-header">
+            <h5 id="{{pub_id}}-label">{{publication.title | strip}}</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body fw-light">
+            {{publication.abstract | strip}}
+        </div>
+    </div>
+    {% endif %}
+</div>

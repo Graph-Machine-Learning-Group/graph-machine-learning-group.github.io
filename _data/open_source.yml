@@ -1,0 +1,22 @@
+- name: Torch Spatiotemporal
+  description: A library for neural spatiotemporal data processing, with a focus on Graph Neural Networks.
+  img: tsl_logo.svg
+  links:
+    website: https://torch-spatiotemporal.readthedocs.io/
+    github: TorchSpatiotemporal/tsl
+- name: Spektral
+  description: A library for building graph neural networks in Keras and Tensorflow.
+  img: spektral_logo.svg
+  links:
+    website: https://graphneural.network/
+    github: danielegrattarola/spektral/
+- name: CDG
+  description: A Python library for detecting changes in stationarity in sequences of graphs.
+  img: cdg_logo.svg
+  links:
+    github: dzambon/cdg
+- name: DTS
+  description: A Keras library that provides multiple deep architectures for multi-step time-series forecasting.
+  img: dts_logo.svg
+  links:
+    github: albertogaspar/dts

@@ -1,0 +1,51 @@
+<footer class="text-center text-lg-start bg-dark text-light mt-auto">
+    <!-- Section: Links  -->
+    <div class="container text-center text-md-start mt-5 border-bottom">
+        <!-- Grid row -->
+        <div class="row">
+            <!-- Grid column -->
+            <div class="col-5 col-lg-4 mx-auto mb-4 d-none d-md-block">
+                <!-- Content -->
+                <h6 class="text-uppercase mb-4">
+                    {{site.title}}
+                </h6>
+                <p class="fw-light">
+                    {{site.description}}
+                </p>
+            </div>
+            <!-- Grid column -->
+            <div class="col-1 col-lg-2 mx-auto mb-4 d-none d-md-block">
+            </div>
+            <!-- Grid column -->
+            <div class="col-3 col-lg-2 mx-auto mb-4 d-none d-md-block">
+                <!-- Links -->
+                <h6 class="text-uppercase mb-4">
+                    Pages
+                </h6>
+                <div style="display: flex; flex-direction: column;" class="fw-light">
+                {% for item in site.navbar.pages %}
+                    <a href="{{ item.url | absolute_url }}" class="text-reset">{{ item.icon }} {{ item.title }}</a>
+                {% endfor %}
+                </div>
+            </div>
+            <!-- Grid column -->
+            <div class="col-12 col-md-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase mb-4">Contacts</h6>
+                <p class="fw-light">🏫 {{ site.address }}</p>
+                <p class="fw-light"><a href="mailto:{{site.email}}" class="text-light">✉️ {{ site.email }}</a></p>
+                {% if site.social %}
+                <p class="text-center">{% include links_list.html links=site.social color='#ddd' %}</p>
+                {% endif %}
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+    </div>
+    <!-- Section: Links  -->
+    <!-- Copyright -->
+    <div class="text-center p-4 text-muted">
+        Copyright &copy; {{site.time | date: "%Y"}} {{site.title}}
+    </div>
+    <!-- Copyright -->
+</footer>

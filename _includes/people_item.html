@@ -1,0 +1,10 @@
+{% assign person = include.person %}
+<div class="col-10 col-sm-6 col-md-4 text-center">
+    <img class="people-thumb medium-thumb" src="{{site.url}}/assets/img/people/{{person.img}}" />
+    <h4 class="mt-2">{{person.name}} <strong>{{person.surname}}</strong></h4>
+    <p class="fw-light text-muted mb-1">{{person.role}}</p>
+    {% if person.links %}
+        {% include links_list.html links=person.links %}
+    {% endif %}
+    <p>{{person.description}}</p>
+</div>

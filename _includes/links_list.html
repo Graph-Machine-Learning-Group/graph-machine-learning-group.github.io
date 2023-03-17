@@ -1,0 +1,28 @@
+{% assign links = include.links %}
+{% assign color = include.color %}
+<div class="link-series">
+    {% if links.website %}
+    <a href="{{ links.website }}" target="_blank"><i><svg class="bi" width="1rem" height="1rem" fill="{% if color %}{{color}}{% else %}currentColor{% endif %}">
+                <use xlink:href="#globe-europe-africa" /></svg></i></a>
+    {% endif %}
+    {% if links.scholar %}
+    <a href="https://scholar.google.it/citations?user={{ links.scholar }}" target="_blank"><i><svg class="bi" width="1rem" height="1rem" fill="{% if color %}{{color}}{% else %}#3669c3{% endif %}">
+                <use xlink:href="#google-scholar" /></svg></i></a>
+    {% endif %}
+    {% if links.github %}
+    <a href="https://github.com/{{ links.github }}" target="_blank"><i><svg class="bi" width="1rem" height="1rem" fill="{% if color %}{{color}}{% else %}#333333{% endif %}">
+                <use xlink:href="#github" /></svg></i></a>
+    {% endif %}
+    {% if links.twitter %}
+    <a href="https://twitter.com/{{ links.twitter }}" target="_blank"><i><svg class="bi" width="1rem" height="1rem" fill="{% if color %}{{color}}{% else %}#55acee{% endif %}">
+                <use xlink:href="#twitter" /></svg></i></a>
+    {% endif %}
+    {% if links.linkedin %}
+    <a href="https://www.linkedin.com/in/{{ links.linkedin }}" target="_blank"><i><svg class="bi" width="1rem" height="1rem" fill="{% if color %}{{color}}{% else %}#0082ca{% endif %}">
+                <use xlink:href="#linkedin" /></svg></i></a>
+    {% endif %}
+    {% if links.mail %}
+    <a href="mailto:{{ links.mail }}" target="_blank"><i><svg class="bi" width="1rem" height="1rem" fill="{% if color %}{{color}}{% else %}currentColor{% endif %}">
+                <use xlink:href="#envelope" /></svg></i></a>
+    {% endif %}
+</div>

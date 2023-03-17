@@ -1,0 +1,13 @@
+{% assign admin = include.admin %}
+<div class="col-10 col-md-4 text-center text-md-end pe-md-4">
+    <img class="people-thumb" src="{{site.url}}/assets/img/people/{{admin.img}}" />
+</div>
+<div class="col-10 col-md-7">
+    <h2>{{admin.name}} <strong>{{admin.surname}}</strong></h2>
+    <p class="fw-light fs-6">{{admin.role}}</p>
+    <p class="mb-1">{{admin.description}}</p>
+    {% if admin.links %}
+        {% include links_list.html links=admin.links %}
+    {% endif %}
+</div>
+<div class="d-none d-md-block col-1"></div>

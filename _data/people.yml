@@ -1,0 +1,169 @@
+# ADMIN
+- id: calippi
+  name: Cesare
+  surname: Alippi
+  group: admin
+  role: Professor with Università della Svizzera italiana and Politecnico di Milano <br> IEEE Fellow - ELLIS Fellow
+  description: His research focuses on graph-based learning, learning in non-stationary environments, lifelong learning, intelligence in embedded, cyber-physical systems and the Internet-of-Things.
+  links:
+    website: http://home.deib.polimi.it/alippi/
+    github: Graph-Machine-Learning-Group
+    linkedin: cesare-alippi-52a5524
+    twitter: GMLG_Lugano
+    scholar: zyzNf4AAAAAJ
+  img: CA.jpg
+# STAFF
+- id: slukovic
+  name: Slobodan
+  surname: Lukovic
+  group: staff
+  role: Post-doc Researcher
+  description: His work is focused on the energy efficiency and reliability of Smart Grids.
+  links:
+    linkedin: slukovic
+    scholar: Ko1rhNYAAAAJ
+  img: SL.jpg
+- id: dzambon 
+  name: Daniele
+  surname: Zambon
+  group: staff
+  role: Post-doc Researcher
+  description: His research focuses on learning in non-stationary environments with spatiotemporal and graph data.
+  links:
+    website: https://dzambon.github.io/
+    github: dzambon
+    linkedin: danielezambon
+    twitter: TruckersHitch
+    scholar: JaQGQEwAAAAJ
+  img: DZ.jpg
+- id: acini 
+  name: Andrea
+  surname: Cini
+  group: staff
+  role: Ph.D. Student
+  description: He is interested in relational inductive biases for the processing of spatiotemporal data.
+  links:
+    website: https://andreacini.github.io/
+    github: andreacini
+    twitter: andreacini1994
+    linkedin: andrea-cini
+    scholar: bQI2UIUAAAAJ
+  img: AC.jpg
+- id: imarisca 
+  name: Ivan
+  surname: Marisca
+  group: staff
+  role: Ph.D. Student
+  description: His studies concern the analysis and prediction of irregular spatiotemporal data.
+  links:
+    website: https://marshka.github.io/
+    github: marshka
+    twitter: IvanMarisca
+    linkedin: ivanmarisca
+    scholar: loKgz80AAAAJ
+  img: IM.jpg
+- id: lbutera 
+  name: Luca
+  surname: Butera
+  group: staff
+  role: Ph.D. Student
+  description: Working on object detection and computer vision.
+  links:
+    website: https://usi.to/7hz
+  img: LB.jpg
+- id: amanenti 
+  name: Alessandro
+  surname: Manenti
+  group: staff
+  role: Ph.D. Student
+  description: He studies spatiotemporal data processing using graph latent spaces.
+  links:
+    github: allemanenti
+    twitter: alle_manenti
+    linkedin: alessandromanenti
+    scholar: T3dBGJUAAAAJ
+  img: AM.jpg
+- id: tmarzi 
+  name: Tommaso
+  surname: Marzi
+  group: staff
+  role: Ph.D. Student
+  description: His research focuses on graph-based prediction and control in reinforcement learning.
+  links:
+    website: https://tommasomarzi.github.io/
+    github: tommasomarzi
+    twitter: tommaso_marzi
+    linkedin: tommasomarzi
+    scholar: uYZ6I-MAAAAJ
+  img: TM.jpg
+- id: simoscopi 
+  name: Stefano
+  surname: Imoscopi
+  group: staff
+  role: Research Collaborator
+  description: He works on applied research projects. His focus is on time series forecasting for the energy industry.
+  links:
+    github: steve3nto
+    linkedin: stefanoimoscopi
+    scholar: gZbmdcsAAAAJ&hl
+  img: SI.jpg
+- id: fbombardieri 
+  name: Federico
+  surname: Bombardieri
+  group: staff
+  role: Research Collaborator
+  description: His research focuses on machine learning for hidrology.
+  links:
+    linkedin: federicobombardieri
+  img: FB.jpg
+# EXTERNAL
+- id: llivi
+  name: Lorenzo
+  surname: Livi
+  group: external
+  role: Assistant professor at the University of Manitoba, Winnipeg (Canada)
+  description: His research interests lie at the intersection of machine learning and complex dynamical systems, with particular emphasis on graph-based methods.
+  links:
+    website: https://sites.google.com/site/lorenzlivi/home
+    scholar: hAL9amAAAAAJ
+  img: LL.jpg
+- id: fmbianchi
+  name: Filippo Maria
+  surname: Bianchi
+  group: external
+  role: Associate professor at the Arctic University of Norway, Tromsø (Norway)
+  description: His research covers deep learning in recurrent neural networks, graph neural networks, time series analysis, and reservoir computing.
+  links:
+    website: https://sites.google.com/view/filippombianchi/home
+    github: FilippoMB
+    twitter: filippomariabi1
+    scholar: yb7cT1MAAAAJ
+  img: FMB.jpg
+# ALUMNI
+- id: pverzelli
+  name: Pietro
+  surname: Verzelli
+  group: alumni
+  period: 2017-2022
+  now: Post-doc Researcher at Johannes Gutenberg University Mainz
+  description: Ph.D., relationships between dynamical systems and machine learning.
+  links:
+    website: https://verzep.github.io/
+- id: dgrattarola
+  name: Daniele
+  surname: Grattarola
+  group: alumni
+  period: 2017-2021
+  now: Research Scientist at Isomorphic Labs
+  description: Ph.D., graph neural networks for dynamical systems and computational biology.
+  links:
+    website: https://danielegrattarola.github.io/
+- id: agasparin
+  name: Alberto
+  surname: Gasparin
+  group: alumni
+  period: 2017-2021
+  now: Applied Scientist at Amazon Research (Berlin)
+  description: Politecnico di Milano, Milan (Italy), deep learning prediction and smart grids.
+  links:
+    website: https://scholar.google.it/citations?user=IWCAUjkAAAAJ&hl=it

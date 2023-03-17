@@ -1,0 +1,152 @@
+---
+layout: default
+---
+{% assign people = site.data.people %}
+{% assign publications = site.data.publications %}
+<!-- Header-->
+<header class="text-white transparent-background">
+    <div class="container px-4 text-center">
+        <h1 class="fw-bolder">Publications</h1>
+        <p class="lead">Check out our works</p>
+    </div>
+</header>
+<!-- About section-->
+<section id="about">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>List of Publications</h2>
+                <p class="lead mb-2">Our {{publications | size}} publications sorted by most recent.</p>
+                <p class="text-muted"><small><sup>*</sup>Equal contribution.</small></p>
+            </div>
+            <div class="col-lg-8">
+                <!-- Filter by author -->
+                <div class="dropdown d-inline-block me-2 mb-2">
+                    <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Filter by author
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item filter-by-author" data-filter="all">All authors</li>
+                        <li><hr class="dropdown-divider"></li>
+                        {% assign authors = publications | map: "authors" | uniq %}
+                        {% for author in authors %}
+                        {% assign auth_name = author | split: ":" %}
+                        {% if auth_name[0] == 'id' %}
+                        {% assign full_author = people | where: "id", auth_name[1] | first %}
+                        {% assign authorNames = full_author.name | split: ' ' %}
+                        <li class="dropdown-item filter-by-author" data-filter="{{auth_name[1]}}">{% for authorName in authorNames %}{{authorName | slice: 0}}. {% endfor %}{{ full_author.surname }}</li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                <!-- Filter by year -->
+                <div class="dropdown d-inline-block me-2 mb-2">
+                    <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Filter by year
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item filter-by-year" data-filter="all">All years</li>
+                        <li><hr class="dropdown-divider"></li>
+                        {% assign years = publications | map: "year" | uniq %}
+                        {% for year in years %}
+                        <li class="dropdown-item filter-by-year" data-filter="{{year | strip}}">{{year | strip }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <!-- Filter by keyword -->
+                <div class="dropdown d-inline-block me-2 mb-2">
+                    <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Filter by keyword
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item filter-by-keyword" data-filter="all">All keywords</li>
+                        <li><hr class="dropdown-divider"></li>
+                        {% assign keywords = publications | map: "keywords" | uniq %}
+                        {% for keyword in keywords %}
+                        {% if keyword %}
+                        <li class="dropdown-item filter-by-keyword" data-filter="{{keyword | downcase | strip | replace: ' ', '-'}}">{{keyword | strip | capitalize }}</li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <hr class="m-3">
+            <div class="publication-list col-lg-8">
+                {% for publication in publications %}
+                {% include publication_item.html publication=publication index=forloop.index %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<script src="{{site.url}}/assets/js/isotope.pkgd.min.js"></script>
+<script type="text/javascript">
+window.addEventListener('DOMContentLoaded', event => {
+    var publicationList = new Isotope('.publication-list', {
+        itemSelector: '.publication-item',
+        layoutMode: 'vertical'
+    });
+
+
+    // Filter by authors
+    var filterAuthorButtons = document.getElementsByClassName('filter-by-author');
+    for (var i = filterAuthorButtons.length - 1; i >= 0; i--) {
+        filterAuthorButtons[i].addEventListener('click', function(event) {
+            var filterValue = event.target.getAttribute('data-filter');
+            // use matching filter function
+            let authorFilter = function(itemElem) {
+                if (filterValue == 'all') {
+                    return true;
+                }
+                authors = itemElem.getElementsByClassName('publication-item-author');
+                authors_id = Array.from(authors).map(function(e) {
+                    return e.getAttribute('author-id');
+                })
+                return authors_id.includes(filterValue);
+            }
+            publicationList.arrange({ filter: authorFilter });
+        });
+    }
+
+
+    // Filter by years
+    var filterYearButtons = document.getElementsByClassName('filter-by-year');
+    for (var i = filterYearButtons.length - 1; i >= 0; i--) {
+        filterYearButtons[i].addEventListener('click', function(event) {
+            var filterValue = event.target.getAttribute('data-filter');
+            // use matching filter function
+            let yearFilter = function(itemElem) {
+                var itemValue = itemElem.getAttribute('data-year');
+                return filterValue == 'all' || filterValue == itemValue;
+            }
+            publicationList.arrange({ filter: yearFilter });
+        });
+    }
+
+
+    // Filter by keywords
+    var filterKeywordButtons = document.getElementsByClassName('filter-by-keyword');
+    for (var i = filterKeywordButtons.length - 1; i >= 0; i--) {
+        filterKeywordButtons[i].addEventListener('click', function(event) {
+            var filterValue = event.target.getAttribute('data-filter');
+            // use matching filter function
+            let keywordFilter = function(itemElem) {
+                if (filterValue == 'all') {
+                    return true;
+                }
+                keywords_container = itemElem.getElementsByClassName('publication-item-keywords');
+                if (keywords_container.length === 0) {
+                    return false;
+                }
+                keywords = keywords_container[0].getElementsByTagName('span');
+                keywords_id = Array.from(keywords).map(function(e) {
+                    return e.getAttribute('keyword-id');
+                })
+                return keywords_id.includes(filterValue);
+            }
+            publicationList.arrange({ filter: keywordFilter });
+        });
+    }
+
+});
+</script>
