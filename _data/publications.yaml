@@ -270,8 +270,8 @@
   venue: IEEE International Joint Conference on Neural Networks
   year: 2022
   keywords:
-    - Nonstationary environments
-    - Continual learning
+    - nonstationary environments
+    - continual learning
   links:
     paper: https://ieeexplore.ieee.org/document/9892142
     code: https://github.com/matteo-munari/GrowPGLN
@@ -720,7 +720,7 @@
     paper: https://arxiv.org/abs/1901.01343
     code: https://github.com/danielegrattarola/spektral/blob/master/examples/node_prediction/citation_arma.py
   keywords: 
-    - graph neural netwoks
+    - graph neural networks
   venue: IEEE Transactions on Pattern Analysis and Machine Intelligence
   year: 2021
   authors:
