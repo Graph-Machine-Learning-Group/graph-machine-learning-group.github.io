@@ -26,13 +26,8 @@ header {
     padding-bottom: 4rem;
 }
 
-.transparent-background {
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(2px);
-}
-
 .bg-primary-dark {
-    background-color: darken($background-color, 10)!important;
+    background-color: darken($background-color, 10) !important;
 }
 
 .bg-blur {
@@ -58,9 +53,11 @@ a {
     min-height: $navbar-height;
 }
 
-// .content {
-//     margin-top: $navbar-height;
-// }
+.content {
+    // margin-top: $navbar-height;
+    position: relative;
+    z-index: 10;
+}
 
 .logo img {
     display: block;
@@ -69,25 +66,30 @@ a {
     height: 140px;
 }
 
+.particles-background {
+    position: relative;
+    background-color: darken($background-color, 5);
+    z-index: -20;
+}
 
-#particles-js canvas {
+.particles-js canvas {
     display: block;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
     opacity: 1;
     -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
-    transition: opacity .8s ease, transform 1.4s ease
+    transition: opacity .8s ease, transform 1.4s ease;
+    filter: blur(1px);
 }
 
-#particles-js {
+.particles-js {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: -10;
     top: 0;
     left: 0;
-    background-color: $background-color;
 }
 
 #group-picture-divider {
