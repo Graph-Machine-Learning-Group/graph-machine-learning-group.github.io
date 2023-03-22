@@ -17,6 +17,7 @@ window.addEventListener('DOMContentLoaded', event => {
     
     // add the created element as first child
     elem.insertBefore(child, elem.firstChild);
+    elem.style.backgroundColor = "#00000000";
 
     particlesJS(id,
 

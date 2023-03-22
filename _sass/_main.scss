@@ -53,12 +53,6 @@ a {
     min-height: $navbar-height;
 }
 
-.content {
-    // margin-top: $navbar-height;
-    position: relative;
-    z-index: 10;
-}
-
 .logo img {
     display: block;
     margin: 0 auto 2em;
@@ -69,7 +63,6 @@ a {
 .particles-background {
     position: relative;
     background-color: darken($background-color, 5);
-    z-index: -20;
 }
 
 .particles-js canvas {
@@ -90,6 +83,7 @@ a {
     z-index: -10;
     top: 0;
     left: 0;
+    background-color: darken($background-color, 5);
 }
 
 #group-picture-divider {
