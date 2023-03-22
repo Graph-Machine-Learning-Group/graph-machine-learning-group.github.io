@@ -1,4 +1,18 @@
 ---
+- title: Graph Kalman Filters
+  links:
+    paper: https://arxiv.org/abs/2303.12021
+  venue: Preprint
+  year: 2023
+  authors:
+  - id:calippi
+  - id:dzambon
+  first_authors: 2
+  keywords:
+    - spatiotemporal graphs
+    - state-space models
+    - graph learning
+  abstract: The well-known Kalman filters model dynamical systems by relying on state-space representations with the next state updated, and its uncertainty controlled, by fresh information associated with newly observed system outputs. This paper generalizes, for the first time in the literature, Kalman and extended Kalman filters to discrete-time settings where inputs, states, and outputs are represented as attributed graphs whose topology and attributes can change with time. The setup allows us to adapt the framework to cases where the output is a vector or a scalar too (node/graph level tasks). Within the proposed theoretical framework, the unknown state-transition and the readout functions are learned end-to-end along with the downstream prediction task.
 - title: Taming Local Effects in Graph-based Spatiotemporal Forecasting
   links:
     paper: https://arxiv.org/abs/2302.04071
