@@ -32,7 +32,8 @@
             <div class="col-12 col-md-3 mx-auto mb-md-0 mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase mb-4">Contacts</h6>
-                <p class="fw-light">🏫 {{ site.address }}</p>
+                <p class="fw-light"><svg class="bi me-1 align-text-bottom" width="1.2em" height="1.2em" fill="currentColor">
+                    <use xlink:href="#usi-icon" /></svg> {{ site.address }}</p>
                 <p class="fw-light"><a href="mailto:{{site.email}}" class="text-light">✉️ {{ site.email }}</a></p>
                 {% if site.social %}
                 <p class="text-center">{% include links_list.html links=site.social color='#ddd' %}</p>
