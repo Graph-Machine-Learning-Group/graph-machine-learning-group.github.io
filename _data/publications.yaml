@@ -142,12 +142,41 @@
     enabling scalability to large networks. Empirical results on relevant datasets
     show that our approach achieves results competitive with the state of the art,
     while dramatically reducing the computational burden.
+- title: Graph Neural Networks for High-Level Synthesis Design Space Exploration
+  venue: ACM Transactions on Design Automation of Electronic Systems
+  year: 2022
+  links:
+    paper: https://dl.acm.org/doi/full/10.1145/3570925
+  keywords:
+    - graph neural networks
+    - design space exploration
+    - relational inductive biases
+  authors:
+  - L. Ferretti
+  - id:acini
+  - G. Zacharopoulos
+  - id:calippi
+  - L. Pozzi
+  first_authors: 2
+  abstract: High-level Synthesis (HLS) Design-Space Exploration (DSE) aims at identifying Pareto-optimal synthesis
+   configurations whose exhaustive search is unfeasible due to the design-space dimensionality and the prohibitive 
+   computational cost of the synthesis process. Within this framework, we address the design automation problem by 
+   proposing graph neural networks that jointly predict acceleration performance and hardware costs of a synthesized 
+   behavioral specification given optimization directives. Learned models can be used to rapidly approach the Pareto 
+   curve by guiding the DSE, taking into account performance and cost estimates. The proposed method outperforms traditional 
+   HLS-driven DSE approaches, by accounting for the arbitrary length of computer programs and the invariant properties of the input. 
+   We propose a novel hybrid control and dataflow graph representation that enables training the graph neural network on 
+   specifications of different hardware accelerators. Our approach achieves prediction accuracy comparable with that of 
+   state-of-the-art simulators without having access to analytical models of the HLS compiler. Finally, the learned representation 
+   can be exploited for DSE in unexplored configuration spaces by fine-tuning on a small number of samples from the new target domain. 
+   The outcome of the empirical evaluation of this transfer learning shows strong results against state-of-the-art baselines in relevant 
+   benchmarks.
 - title: Learning to Reconstruct Missing Data from Spatiotemporal Graphs with Sparse
     Observations
   links:
     paper: https://arxiv.org/abs/2205.13479
     code: https://github.com/Graph-Machine-Learning-Group/spin
-  venue: To appear in Advances in Neural Information Processing Systems
+  venue: Advances in Neural Information Processing Systems
   year: 2022
   authors:
   - id:imarisca
@@ -551,6 +580,7 @@
   - id:calippi
   - J. Peters
   - M. Restelli
+  first_authors: 2
   keywords:
     - reinforcement learning
   abstract: Temporal-Difference off-policy algorithms are among the building blocks
