@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<!-- Header-->
+<header class="text-white particles-background">
+    <div class="container px-4 text-center">
+        <h1 class="fw-bolder">Tutorials</h1>
+    </div>
+</header>
+<!-- Program section-->
+<section>
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>List of tutorials</h2>
+                <ul>
+                    {% for tutorial in site.tutorials %}
+                      <li>
+                        <a class="h5" href="{{ tutorial.url }}">{{ tutorial.title }}</a><br>
+                        <span class="text-muted fw-light">{{ tutorial.venue }}</span>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                  
+            </div>
+        </div>
+    </div>
+</section>

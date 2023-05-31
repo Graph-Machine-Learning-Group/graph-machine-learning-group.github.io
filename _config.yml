@@ -3,8 +3,12 @@ title: Graph Machine Learning Group
 email: info@gmlg.ch
 description: Research group part of the Swiss AI Lab (IDSIA) at Università della Svizzera italiana (Switzerland) led by Prof. Cesare Alippi.
 url: https://gmlg.ch
-
 address: "<strong>Università della Svizzera italiana</strong><br>Via Giuseppe Buffi, 13 • 6900 Lugano • Switzerland"
+
+collections:
+  tutorials:
+    output: true
+    permalink: /:collection/:path
 
 navbar:
   brand:
