@@ -25,13 +25,20 @@
     </div>
     <div class="publication-item-links">
         {% if publication.abstract %}
-        <a class="text-primary" role="button" data-bs-toggle="offcanvas" data-bs-target="#{{pub_id}}" aria-expanded="false" aria-controls="{{pub_id}}">🔍 Show abstract</a>
+        <a class="text-primary" role="button" data-bs-toggle="offcanvas" data-bs-target="#{{pub_id}}" aria-expanded="false" aria-controls="{{pub_id}}">Show abstract</a>
         {% endif %}
         {% if publication.links.paper %}
-        <a class="text-primary" href="{{publication.links.paper}}" target="_blank">📄 Paper</a>
+        <a class="text-primary" href="{{publication.links.paper}}" target="_blank">Paper</a>
+        {% else %}
+        {% if publication.arxiv_id %}
+        <a class="text-primary" href="https://arxiv.org/abs/{{publication.arxiv_id}}" target="_blank">arXiv</a>
+        {% endif %}
         {% endif %}
         {% if publication.links.code %}
-        <a class="text-primary" href="{{publication.links.code}}" target="_blank">💻 Code</a>
+        <a class="text-primary" href="{{publication.links.code}}" target="_blank">Code</a>
+        {% endif %}
+        {% if publication.links.doi %}
+        <a class="text-primary" href="{{publication.links.doi}}" target="_blank">DOI</a>
         {% endif %}
     </div>
     {% if publication.keywords %}

@@ -39,6 +39,10 @@ a {
     text-decoration: none;
 }
 
+ol li {
+    margin: .4em 0;
+}
+
 .text-light {
     color: #ccc !important;
 }
@@ -286,10 +290,18 @@ a {
 
 .publication-item-links {
     display: inline-flex;
-    gap: 1rem;
+    gap: .75rem;
     font-size: 0.9rem;
     // font-weight: 300;
     margin-bottom: 0.2rem;
+}
+
+.publication-item-links a::before {
+    content: "[";
+}
+
+.publication-item-links a::after {
+    content: "]";
 }
 
 // .equal-contrib {

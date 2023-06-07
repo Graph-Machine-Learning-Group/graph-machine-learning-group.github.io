@@ -24,7 +24,9 @@
                 </h6>
                 <div style="display: flex; flex-direction: column;" class="fw-light">
                 {% for item in site.navbar.pages %}
-                    <a href="{{ item.url | absolute_url }}" class="text-reset">{{ item.icon }} {{ item.title }}</a>
+                {% if item.url %}
+                    <a href="{{ item.url | absolute_url }}" class="text-reset">{% if item.icon %}{{item.icon}} {% endif %}{{ item.title }}</a>
+                {% endif %}
                 {% endfor %}
                 </div>
             </div>

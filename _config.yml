@@ -17,13 +17,17 @@ navbar:
   pages:
     - title: About
       url: /
-      icon: 🏠
+      # icon: 🏠
     - title: People
       url: /people.html
-      icon: 👨‍💻
+      # icon: 👨‍💻
     - title: Publications
       url: /publications.html
-      icon: 📄
+      # icon: 📄
+    - title: Activities
+      pages:
+        - title: Tutorials
+          url: /tutorials
 
 social:
   twitter: GMLG_Lugano

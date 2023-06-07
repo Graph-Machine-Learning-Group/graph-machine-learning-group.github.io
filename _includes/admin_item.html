@@ -5,7 +5,9 @@
 <div class="col-10 col-md-7">
     <h2>{{admin.name}} <strong>{{admin.surname}}</strong></h2>
     <p class="fw-light fs-6">{{admin.role}}</p>
+    {% unless include.hide_description %}
     <p class="mb-1">{{admin.description}}</p>
+    {% endunless %}
     {% if admin.links %}
         {% include links_list.html links=admin.links %}
     {% endif %}

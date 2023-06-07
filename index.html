@@ -37,7 +37,7 @@ layout: default
             <div class="col-lg-8">
                 <h2 class="text-center">News</h2>
                 <ul style="padding-left: 6rem;">
-                    {% for news in site.data.news limit:3 %}
+                    {% for news in site.data.news limit:5 %}
                     <li style="list-style: '{{news.date}} &bull; ';">{{news.text}}</li>
                     {% endfor %}
                 </ul>
