@@ -10,12 +10,167 @@ venue: ECML PKDD 2023
         <p class="lead">Forecasting, Reconstruction and Analysis</p>
     </div>
 </header>
-<!-- Program section-->
+<!-- Outline section-->
 <section>
     <div class="container px-4">
         <div class="row gx-4 justify-content-center">
             <div class="col-lg-8">
-                <h2>Coming soon</h2>
+                <p>
+                    Successful applications of <strong>deep learning</strong> in <strong>time series</strong> processing
+                    often involve training a single neural network on a collection of (related) time series. In the case
+                    of <strong>spatially correlated</strong> time series, pairwise relationships can be modeled by
+                    considering a (possibly dynamic) graph spanning the collection. In this context, <strong>graph-based
+                        methods</strong> take the standard deep learning approach to time series processing a step
+                    forward. The recent theoretical and practical developments in graph neural networks make the
+                    adoption of such an approach particularly appealing and timely.
+
+                    <!-- Successful applications of <strong>deep learning</strong> in <strong>time series</strong> processing
+                    often involve training a single neural network on a collection of (related) time series. In the case
+                    of <strong>spatially correlated</strong> time series, pairwise relationships can be modeled by
+                    considering a (possibly dynamic) graph spanning the collection. In this context, <strong>graph-based
+                        methods</strong> take the standard deep learning approach to time series processing a step
+                    forward.
+
+                    Graph representations allow for the conditioning of the predictions w.r.t. neighborhoods of sensors
+                    (i.e., nodes) while learning a single set of shared parameters. The recent theoretical and practical
+                    developments in graph neural networks make the adoption of such an approach particularly appealing
+                    and timely. -->
+
+                    The twofold <strong>objective</strong> of this tutorial is to:
+                <ol>
+                    <li>offer a <strong>comprehensive overview</strong> of the field, with a focus on forecasting and
+                        missing data reconstruction;
+                    </li>
+                    <li>provide the necessary theoretically grounded <strong>tools and practical
+                            recommendations</strong> to design and evaluate graph-based spatiotemporal models.
+                    </li>
+                </ol>
+                This tutorial is meant for both early-career and experienced researchers looking for a coherent
+                framing of the field, seeking principles and guidelines to secure the most advanced technologies.
+                Basic knowledge about deep learning for time series and graph-structured data is sufficient to
+                benefit from the tutorial.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Location section-->
+<section class="text-white" style="background-image: url(./img/torino-background.jpg); background-attachment: fixed;">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <p class="lead">This tutorial will be co-located with the <strong
+                        class="text-decoration-underline">European Conference on Machine
+                        Learning and Principles and Practice of Knowledge Discovery in Databases (ECML/PKDD)</strong>,
+                    held in <strong>Torino from the 18th to the 22nd of September 2023</strong>.<br>The tutorial will
+                    take place at
+                    <strong class="text-decoration-underline">Politecnico di Torino</strong> on <strong
+                        class="text-decoration-underline">Friday, September 22nd</strong>.
+                </p>
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+                    style="gap: 1.5em">
+                    <div>
+                        <img src="./img/ecml-pkdd-2023-logo.png" height="82px" class="me-2" />
+                        <img src="./img/polito-logo.png" height="82px" />
+                    </div>
+                    <a class="btn btn-outline-light" href="https://2023.ecmlpkdd.org/" role="button"
+                        target="_blank">Conference website</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Program section-->
+<section class="bg-light">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h1 class="text-center">Program</h1>
+                <h5 class="mt-3 mb-2 fw-light"><span class="fw-bold me-2">Part 1</span> Graph-based processing of
+                    spatiotemporal time series.</h5>
+                <ol>
+                    <li><strong>Spatiotemporal time series with graph-side information</strong><br>
+                        Definition of the problem settings. Introduction to common downstream tasks: forecasting and
+                        imputation.
+                    </li>
+                    <li><strong>Spatiotemporal graph neural networks (STGNNs)</strong><br>
+                        Presentation of the fundamental components of the general STGNN family of deep learning models
+                        for STS. Recipes and strategies for building effective STGNNs are provided.
+                    </li>
+                    <li><strong>Global and local spatiotemporal models</strong><br>
+                        Discussion on the problem of local effects in spatiotemporal data. Review of the global and
+                        local modeling paradigms with their strengths and practical implications.
+                    </li>
+                    <li><strong>Forecasting</strong><br>
+                        Overview of model architectures from the literature.
+                    </li>
+                </ol>
+
+                <h5 class="mt-3 mb-2 fw-light"><span class="fw-bold me-2">Part 2</span> Challenges and tools.</h5>
+                <ol>
+                    <li><strong>Graph learning</strong><br>
+                        Why and how to learn a graph structure from data when relational information is unavailable,
+                        insufficient or unreliable.
+                    </li>
+                    <li><strong>Statistical tools to test the optimality of predictive
+                            models</strong><br>
+                        Identification of time-space regions, e.g., specific sensors or periods of time, where
+                        predictions can be improved.
+                    </li>
+                    <li><strong>Learning in non-stationary environments</strong><br>
+                        Challenges and methods associated with modeling the evolution of spatiotemporal systems over
+                        time.
+                    </li>
+                    <li><strong>Scalability</strong><br>
+                        Methods to enable scalability to large sensor networks.
+                    </li>
+                    <li><strong>Dealing with missing data</strong><br>
+                        The problem of missing data in real-world applications and architectures for graph-based
+                        multivariate
+                        time series imputation.
+                    </li>
+                    <li><strong>Software</strong><br>
+                        Overview of open-source Pytorch libraries for graph-based spatiotemporal data processing and
+                        short demo
+                        with Torch Spatiotemporal.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Organizers section-->
+<section>
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h1>Organizers</h1>
+                <p class="lead">This tutorial is organized by the <a href=”{{site.url}}” class="fw-normal"
+                        target="_blank">GMLG Research
+                        Group</a> within the Swiss AI Lab <a href="https://idsia.ch" class="fw-normal"
+                        target="_blank">IDSIA</a> and <a href="https://usi.ch" class="fw-normal"
+                        target="_blank">Università della Svizzera italiana</a>.</p>
+                {% assign people = site.data.people %}
+                <div class="row g-4 my-4 justify-content-center align-items-center text-center text-md-start">
+                </div>
+                <div class="row g-4 my-4 justify-content-center align-items-top text-center">
+                    {% assign ca = people | where: "id", "calippi" | first %}
+                    <div class="col-10 col-sm-6 col-md-3 text-center">
+                        <img class="people-thumb medium-thumb" src="{{site.url}}/assets/img/people/{{ca.img}}" />
+                        <h4 class="mt-2">{{ca.name}} <strong>{{ca.surname}}</strong></h4>
+                        <p class="fw-light text-muted mb-1">Professor</p>
+                        {% if ca.links %}
+                        {% include links_list.html links=ca.links %}
+                        {% endif %}
+                    </div>
+
+                    {% assign dz = people | where: "id", "dzambon" | first %}
+                    {% include people_item.html person=dz hide_description=true col_md=3 %}
+                    {% assign ac = people | where: "id", "acini" | first %}
+                    {% include people_item.html person=ac hide_description=true col_md=3 %}
+                    {% assign im = people | where: "id", "imarisca" | first %}
+                    {% include people_item.html person=im hide_description=true col_md=3 %}
+                </div>
             </div>
         </div>
     </div>
