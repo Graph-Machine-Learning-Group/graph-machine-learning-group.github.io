@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<!-- Header -->
+<header class="text-white particles-background">
+    <div class="container px-4 text-center">
+        <h1 class="fw-bolder">{{page.title}}</h1>
+        {% if page.lead %}
+        <p class="lead">{{page.lead}}</p>
+        {% endif %}
+    </div>
+</header>
+<!-- Content -->
+{{ content }}
