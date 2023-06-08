@@ -9,7 +9,14 @@
     <meta property="og:title" content="{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}">
     <meta property="og:site_name" content="{{site.title}}">
     <meta property="og:url" content="{{site.url}}{{page.url}}">
+    {% if page.image_abs %}
+    <meta property="og:image" content="{{site.url}}/{{page.image_abs}}">
+    {% else %}
+    {% if page.image_rel %}
+    <meta property="og:image" content="{{page.image_rel}}">
+    {% endif %}
     <meta property="og:image" content="{{site.url}}/assets/img/group-picture-compressed.jpg">
+    {% endif %}
     <meta property="og:description" content="{% if page.lead %}{{page.lead}}{% else %}{{site.description}}{% endif %}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image:alt" content="{{site.title}}">
