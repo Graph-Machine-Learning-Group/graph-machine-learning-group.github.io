@@ -28,6 +28,8 @@ navbar:
       pages:
         - title: Tutorials
           url: /tutorials
+        - title: Special sessions
+          url: /special-sessions.html
 
 social:
   twitter: GMLG_Lugano

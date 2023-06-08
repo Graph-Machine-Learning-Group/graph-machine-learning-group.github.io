@@ -1,0 +1,23 @@
+---
+layout: particles_header
+title: Special Sessions
+---
+<!-- Program section-->
+<section>
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>List of special sessions</h2>
+                <ul>
+                    {% for special_session in site.data.special_sessions %}
+                      <li>
+                        <a class="h5" href="{{ special_session.url }}">{{ special_session.title }}</a><br>
+                        <span class="text-muted fw-light">{{ special_session.venue }}</span>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                  
+            </div>
+        </div>
+    </div>
+</section>
