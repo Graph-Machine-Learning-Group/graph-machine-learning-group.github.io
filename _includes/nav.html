@@ -21,16 +21,16 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbar{{item.title | join: '' }}Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       {{ item.title }}
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbar{{item.title | join: '' }}Dropdown">
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbar{{item.title | join: '' }}Dropdown">
                         {% for subitem in item.pages %}
-                      <li><a class="dropdown-item" href="{{ subitem.url | absolute_url }}">{% if subitem.icon %}{{subitem.icon}} {% endif %}{{ subitem.title
+                      <li><a class="dropdown-item nav-link toggle-navbar" href="{{ subitem.url | absolute_url }}">{% if subitem.icon %}{{subitem.icon}} {% endif %}{{ subitem.title
                     }}</a></li>
                       {% endfor %}
                     </ul>
                   </li>
                 {% else %}
                 <li class="nav-item"><a href="{{ item.url | absolute_url }}"
-                        class="nav-link {% if item.url == page.url %}active{% endif %}">{% if item.icon %}{{item.icon}} {% endif %}{{ item.title
+                        class="nav-link toggle-navbar {% if item.url == page.url %}active{% endif %}">{% if item.icon %}{{item.icon}} {% endif %}{{ item.title
                         }}</a></li>
                 {% endif %}
                 {% endfor %}

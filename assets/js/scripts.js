@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', event => {
     const navIcon = document.getElementById('navbar-menu-icon');
 
     const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
+        document.querySelectorAll('#navbarResponsive .toggle-navbar')
     );
     navbarToggler.addEventListener('click', () => {
         navIcon.classList.toggle('open');
