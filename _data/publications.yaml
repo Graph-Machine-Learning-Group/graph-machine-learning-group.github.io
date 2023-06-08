@@ -222,9 +222,9 @@
     results on representative benchmarks show the effectiveness of the proposed method.
 - title: 'AZ-whiteness test: a test for uncorrelated noise on spatio-temporal graphs'
   links:
-    paper: https://arxiv.org/abs/2204.11135
+    paper: https://proceedings.neurips.cc/paper_files/paper/2022/hash/4e9fa6e716940a7cfc60c46e6f702f52-Abstract-Conference.html
     code: https://github.com/dzambon/az-whiteness-test
-  venue: To appear in Advances in Neural Information Processing Systems
+  venue: Advances in Neural Information Processing Systems
   year: 2022
   authors:
   - id:dzambon
@@ -278,7 +278,7 @@
     component of an end-to-end forecasting architecture.
 - title: Deep learning for graphs (special session at ESANN 2022)
   links:
-    paper: https://www.esann.org/proceedings/2022#485
+    paper: https://doi.org/10.14428/esann/2022.ES2022-7
   venue: European Symposium on Artificial Neural Networks, Computational Intelligence
     and Machine Learning
   year: 2022
@@ -656,7 +656,7 @@
     than 20%.
 - title: Deep learning for graphs (special session at ESANN 2021)
   links:
-    paper: https://www.esann.org/proceedings/2021#416
+    paper: https://doi.org/10.14428/esann/2021.ES2021-5
   venue: European Symposium on Artificial Neural Networks
   year: 2021
   keywords:
