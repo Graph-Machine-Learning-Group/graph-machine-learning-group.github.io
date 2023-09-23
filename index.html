@@ -36,13 +36,19 @@ layout: default
 <section class="bg-light">
     <div class="container px-4">
         <div class="row gx-4 justify-content-center">
-            <div class="col-lg-8">
-                <h2 class="text-center">News</h2>
-                <ul style="padding-left: 6rem;">
+            <h2 class="text-center">News</h2>
+            <div class="col-12 col-md-8 col-lg-5 my-2">
+                <ul class="list-group list-group-flush">
                     {% for news in site.data.news limit:5 %}
-                    <li style="list-style: '{{news.date}} &bull; ';">{{news.text}}</li>
+                    <li class="list-group-item" style="background: none;">
+                        <span class="mb-1 text-muted fw-light" style="font-size: .8em;">{{news.date | date: "%b %Y"}}</span><br>
+                        {{news.text}}
+                    </li>
                     {% endfor %}
                 </ul>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 my-2">
+                <a class="twitter-timeline" data-height="500" data-theme="light" href="https://twitter.com/GMLG_Lugano?ref_src=twsrc%5Etfw">Tweets by GMLG_Lugano</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
     </div>
