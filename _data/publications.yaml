@@ -884,7 +884,7 @@
 - title: Spectral Clustering with Graph Neural Networks for Graph Pooling
   links:
     paper: https://arxiv.org/abs/1907.00481
-    paper: https://github.com/FilippoMB/Spectral-Clustering-with-Graph-Neural-Networks-for-Graph-Pooling
+    code: https://github.com/FilippoMB/Spectral-Clustering-with-Graph-Neural-Networks-for-Graph-Pooling
   venue: International Conference on Machine Learning
   year: 2020
   authors:
