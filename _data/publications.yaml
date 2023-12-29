@@ -13,6 +13,22 @@
     - spatiotemporal graphs
     - forecasting
   abstract: Graph-based deep learning methods have become popular tools to process collections of correlated time series. Differently from traditional multivariate forecasting methods, neural graph-based predictors take advantage of pairwise relationships by conditioning forecasts on a (possibly dynamic) graph spanning the time series collection. The conditioning can take the form of an architectural inductive bias on the neural forecasting architecture, resulting in a family of deep learning models called spatiotemporal graph neural networks. Such relational inductive biases enable the training of global forecasting models on large time-series collections, while at the same time localizing predictions w.r.t. each element in the set (i.e., graph nodes) by accounting for local correlations among them (i.e., graph edges). Indeed, recent theoretical and practical advances in graph neural networks and deep learning for time series forecasting make the adoption of such processing frameworks appealing and timely. However, most of the studies in the literature focus on proposing variations of existing neural architectures by taking advantage of modern deep learning practices, while foundational and methodological aspects have not been subject to systematic investigation. To fill the gap, this paper aims to introduce a comprehensive methodological framework that formalizes the forecasting problem and provides design principles for graph-based predictive models and methods to assess their performance. At the same time, together with an overview of the field, we provide design guidelines, recommendations, and best practices, as well as an in-depth discussion of open challenges and future research directions.
+- title: Graph Representation Learning (special session at ESANN 2023)
+  links:
+    paper: https://doi.org/10.14428/esann/2023.ES2023-4
+  venue: ESANN
+  year: 2023
+  authors:
+  - D. Bacciu
+  - F. Errica
+  - A. Micheli
+  - N. Navarin
+  - L. Pasa
+  - M. Podda 
+  - id:dzambon
+  keywords:
+    - graph neural networks
+  abstract: In a broad range of real-world machine learning applications, representing examples as graphs is crucial to avoid a loss of information. Due to this in the last few years, the definition of machine learning methods, particularly neural networks, for graph-structured inputs has been gaining increasing attention. In particular, Deep Graph Networks (DGNs) are nowadays the most commonly adopted models to learn a representation that can be used to address different tasks related to nodes, edges, or even entire graphs. This tutorial paper reviews fundamental concepts and open challenges of graph representation learning and summarizes the contributions that have been accepted for publication to the ESANN 2023 special session on the topic.
 - title: Graph-based Time Series Clustering for End-to-End Hierarchical Forecasting
   links:
     paper: https://arxiv.org/abs/2305.19183

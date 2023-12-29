@@ -13,7 +13,8 @@ description: List of past and upcoming special sessions from GMLG.
                     {% for special_session in site.data.special_sessions %}
                       <li>
                         <a class="h5" href="{{ special_session.url }}">{{ special_session.title }}</a><br>
-                        <span class="text-muted fw-light">{{ special_session.venue }}</span>
+                        <span class="text-muted fw-light">{{ special_session.venue }} &sdot; {{ special_session.city }}</span>
+                        <!-- <i>{{ special_session.city }}</i>, {{ special_session.date }}. -->
                       </li>
                     {% endfor %}
                   </ul>

@@ -13,7 +13,7 @@ description: List of past and upcoming tutorials from GMLG.
                     {% for tutorial in site.tutorials %}
                       <li>
                         <a class="h5" href="{{ tutorial.url }}">{{ tutorial.title }}</a><br>
-                        <span class="text-muted fw-light">{{ tutorial.venue }}</span>
+                        <span class="text-muted fw-light">{{ tutorial.venue }} &sdot; {{ tutorial.city }}</span>
                       </li>
                     {% endfor %}
                   </ul>
