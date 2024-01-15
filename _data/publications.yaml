@@ -29,6 +29,27 @@
   keywords:
     - graph neural networks
   abstract: In a broad range of real-world machine learning applications, representing examples as graphs is crucial to avoid a loss of information. Due to this in the last few years, the definition of machine learning methods, particularly neural networks, for graph-structured inputs has been gaining increasing attention. In particular, Deep Graph Networks (DGNs) are nowadays the most commonly adopted models to learn a representation that can be used to address different tasks related to nodes, edges, or even entire graphs. This tutorial paper reviews fundamental concepts and open challenges of graph representation learning and summarizes the contributions that have been accepted for publication to the ESANN 2023 special session on the topic.
+- title: "A Survey on Graph Neural Networks for Time Series: Forecasting, Classification, Imputation, and Anomaly Detection"
+  links:
+    paper: https://arxiv.org/abs/2307.03759
+  venue: Preprint
+  year: 2023
+  authors:
+  - M. Jin
+  - H. Y. Koh
+  - Q. Wen
+  - id:dzambon
+  - id:calippi
+  - G. I. Webb
+  - I. King 
+  - S. Pan
+  keywords:
+    - spatiotemporal graphs
+    - graph neural networks
+    - forecasting
+    - imputation
+    - anomaly detection
+  abstract: "Time series are the primary data type used to record dynamic system measurements and generated in great volume by both physical sensors and online processes (virtual sensors). Time series analytics is therefore crucial to unlocking the wealth of information implicit in available data. With the recent advancements in graph neural networks (GNNs), there has been a surge in GNN-based approaches for time series analysis. These approaches can explicitly model inter-temporal and inter-variable relationships, which traditional and other deep neural network-based methods struggle to do. In this survey, we provide a comprehensive review of graph neural networks for time series analysis (GNN4TS), encompassing four fundamental dimensions: forecasting, classification, anomaly detection, and imputation. Our aim is to guide designers and practitioners to understand, build applications, and advance research of GNN4TS. At first, we provide a comprehensive task-oriented taxonomy of GNN4TS. Then, we present and discuss representative research works and introduce mainstream applications of GNN4TS. A comprehensive discussion of potential future research directions completes the survey. This survey, for the first time, brings together a vast array of knowledge on GNN-based time series research, highlighting foundations, practical applications, and opportunities of graph neural networks for time series analysis."
 - title: Graph-based Time Series Clustering for End-to-End Hierarchical Forecasting
   links:
     paper: https://arxiv.org/abs/2305.19183
@@ -92,6 +113,7 @@
 - title: Taming Local Effects in Graph-based Spatiotemporal Forecasting
   links:
     paper: https://arxiv.org/abs/2302.04071
+    code: https://github.com/Graph-Machine-Learning-Group/taming-local-effects-stgnns
   venue: Advances in Neural Information Processing Systems
   year: 2023
   authors:
@@ -280,6 +302,7 @@
 - title: Sparse Graph Learning from Spatiotemporal Time Series
   links:
     paper: https://jmlr.org/papers/v24/22-1154.html
+    code: https://github.com/andreacini/sparse-graph-learning
   venue: Journal of Machine Learning Research
   year: 2023
   authors:
@@ -1001,6 +1024,8 @@
     code: https://github.com/danielegrattarola/ccm-aae
   venue: Applied Soft Computing
   year: 2019
+  keywords:
+    - graph neural networks
   authors:
   - id:dgrattarola
   - id:llivi
