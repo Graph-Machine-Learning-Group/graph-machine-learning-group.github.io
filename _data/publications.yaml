@@ -1,4 +1,22 @@
 ---
+- title: 'Graph-based Virtual Sensing from Sparse and Partial Multivariate Observations'
+  links:
+    paper: https://arxiv.org/abs/2402.12598
+    code: https://github.com/gdefe
+  venue: International Conference on Learning Representations
+  year: 2024
+  authors:
+  - G. De Felice
+  - id:acini
+  - id:dzambon
+  - V. V. Gusev
+  - id:calippi
+  keywords:
+    - spatiotemporal graphs
+    - graph neural networks
+    - imputation
+    - graph learning
+  abstract: Virtual sensing techniques allow for inferring signals at new unmonitored locations by exploiting spatio-temporal measurements coming from physical sensors at different locations. However, as the sensor coverage becomes sparse due to costs or other constraints, physical proximity cannot be used to support interpolation. In this paper, we overcome this challenge by leveraging dependencies between the target variable and a set of correlated variables (covariates) that can frequently be associated with each location of interest. From this viewpoint, covariates provide partial observability, and the problem consists of inferring values for unobserved channels by exploiting observations at other locations to learn how such variables can correlate. We introduce a novel graph-based methodology to exploit such relationships and design a graph deep learning architecture, named GgNet, implementing the framework. The proposed approach relies on propagating information over a nested graph structure that is used to learn dependencies between variables as well as locations. GgNet is extensively evaluated under different virtual sensing scenarios, demonstrating higher reconstruction accuracy compared to the state-of-the-art.
 - title: Graph Deep Learning for Time Series Forecasting
   links:
     paper: https://arxiv.org/abs/2310.15978
@@ -145,13 +163,13 @@
   venue: Sustainable Energy, Grids and Networks, Volume 34
   year: 2023
   authors:
-  - Nikolaos A. Efkarpidis
+  - N. A. Efkarpidis
   - id:simoscopi
-  - Martin Geidl
+  - M. Geidl
   - id:acini
   - id:slukovic
   - id:calippi
-  - Ingo Herbst
+  - I. Herbst
   keywords:
     - forecasting
     - energy analytics
