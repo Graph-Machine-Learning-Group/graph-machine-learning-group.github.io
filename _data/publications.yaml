@@ -120,7 +120,7 @@
   authors:
   - id:lbutera
   - id:acini
-  - A. Ferrante
+  - id:aferrante
   - id:calippi
   keywords:
     - relational inductive biases
@@ -751,7 +751,7 @@
   year: 2021
   authors:
   - id:lbutera
-  - A. Ferrante
+  - id:aferrante
   - M. Jermini
   - M. Prevostini
   - id:calippi

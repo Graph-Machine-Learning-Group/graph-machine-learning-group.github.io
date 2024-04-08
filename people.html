@@ -5,22 +5,29 @@ lead: Meet the GMLG staff
 description: Meet the people in GMLG.
 ---
 {% assign people = site.data.people %}
-<!-- Admin section-->
+<!-- Leader section-->
 <section>
     <div class="container px-4">
         <div class="row g-4 justify-content-center align-items-center text-center text-md-start">
-            {% assign admin = people | where: "group", "admin" | first %}
-            {% include admin_item.html admin=admin %}
+            {% assign leader = people | where: "group", "leader" | first %}
+            {% include leader_item.html leader=leader %}
         </div>
     </div>
 </section>
-<!-- Staff section-->
+<!-- Team section-->
 <section class="bg-light">
     <div class="container px-4">
         <div class="row g-4 justify-content-center align-items-top text-center">
-            <div class="col-12"><h2>Staff</h2></div>
-            {% assign staff = people | where: "group", "staff" %}
-            {% for person in staff %}
+            <div class="col-12"><h2>Research Team</h2></div>
+            {% assign team = people | where: "group", "team" %}
+            {% for person in team %}
+                {% include people_item.html person=person %}
+            {% endfor %}
+        </div>
+        <div class="row g-4 mt-4 justify-content-center align-items-top text-center">
+            <div class="col-12"><h2>Affiliate Senior Researchers</h2></div>
+            {% assign affiliate = people | where: "group", "affiliate" %}
+            {% for person in affiliate %}
                 {% include people_item.html person=person %}
             {% endfor %}
         </div>

@@ -1,8 +1,8 @@
-# ADMIN
+# LEADER
 - id: calippi
   name: Cesare
   surname: Alippi
-  group: admin
+  group: leader
   role: Professor with Università della Svizzera italiana and Politecnico di Milano <br> IEEE Fellow - ELLIS Fellow
   description: His research focuses on graph-based learning, learning in non-stationary environments, lifelong learning, intelligence in embedded, cyber-physical systems and the Internet-of-Things.
   links:
@@ -12,21 +12,11 @@
     # twitter: GMLG_Lugano
     scholar: zyzNf4AAAAAJ
   img: CA.jpg
-# STAFF
-- id: slukovic
-  name: Slobodan
-  surname: Lukovic
-  group: staff
-  role: Post-doc Researcher
-  description: His work is focused on the energy efficiency and reliability of Smart Grids.
-  links:
-    linkedin: slukovic
-    scholar: Ko1rhNYAAAAJ
-  img: SL.jpg
+# TEAM
 - id: dzambon 
   name: Daniele
   surname: Zambon
-  group: staff
+  group: team
   role: Post-doc Researcher
   description: His research focuses on learning in non-stationary environments with spatiotemporal and graph data.
   links:
@@ -39,7 +29,7 @@
 - id: acini 
   name: Andrea
   surname: Cini
-  group: staff
+  group: team
   role: Ph.D. Student
   description: He is interested in relational inductive biases for the processing of spatiotemporal data.
   links:
@@ -52,7 +42,7 @@
 - id: imarisca 
   name: Ivan
   surname: Marisca
-  group: staff
+  group: team
   role: Ph.D. Student
   description: His studies concern the analysis and prediction of irregular spatiotemporal data.
   links:
@@ -65,7 +55,7 @@
 - id: lbutera 
   name: Luca
   surname: Butera
-  group: staff
+  group: team
   role: Ph.D. Student
   description: Working on object detection and computer vision.
   links:
@@ -74,7 +64,7 @@
 - id: amanenti 
   name: Alessandro
   surname: Manenti
-  group: staff
+  group: team
   role: Ph.D. Student
   description: He studies spatiotemporal data processing using graph latent spaces.
   links:
@@ -87,7 +77,7 @@
 - id: tmarzi 
   name: Tommaso
   surname: Marzi
-  group: staff
+  group: team
   role: Ph.D. Student
   description: His research focuses on graph-based prediction and control in reinforcement learning.
   links:
@@ -100,7 +90,7 @@
 - id: simoscopi 
   name: Stefano
   surname: Imoscopi
-  group: staff
+  group: team
   role: Research Collaborator
   description: He works on applied research projects. His focus is on time series forecasting for the energy industry.
   links:
@@ -111,12 +101,34 @@
 - id: fbombardieri 
   name: Federico
   surname: Bombardieri
-  group: staff
+  group: team
   role: Research Collaborator
   description: His research focuses on machine learning for hydrology.
   links:
     linkedin: federicobombardieri
   img: FB.jpg
+# AFFILIATE
+- id: slukovic
+  name: Slobodan
+  surname: Lukovic
+  group: affiliate
+  role: Researcher
+  description: His work is focused on the energy efficiency and reliability of Smart Grids.
+  links:
+    linkedin: slukovic
+    scholar: Ko1rhNYAAAAJ
+  img: SL.jpg
+- id: aferrante
+  name: Alberto
+  surname: Ferrante
+  group: affiliate
+  role: Lecturer and Researcher
+  description: His work focuses on security for pervasive devices and applications of machine learning in IoT.
+  links:
+    website: https://usi.to/esg
+    linkedin: alberto-ferrante-155b53
+    scholar: nxoghS8AAAAJ
+  img: AF.jpg
 # EXTERNAL
 - id: llivi
   name: Lorenzo

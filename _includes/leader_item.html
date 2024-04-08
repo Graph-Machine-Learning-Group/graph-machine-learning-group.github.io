@@ -1,0 +1,16 @@
+{% assign leader = include.leader %}
+<div class="col-10 col-md-4 text-center text-md-end pe-md-4">
+    <img class="people-thumb" src="{{site.url}}/assets/img/people/{{leader.img}}" />
+</div>
+<div class="col-10 col-md-7">
+    <p class="fw-light text-muted fs-5 mb-0">Group leader</p>
+    <h2>{{leader.name}} <strong>{{leader.surname}}</strong></h2>
+    <p class="fw-light fs-6">{{leader.role}}</p>
+    {% unless include.hide_description %}
+    <p class="mb-1">{{leader.description}}</p>
+    {% endunless %}
+    {% if leader.links %}
+        {% include links_list.html links=leader.links %}
+    {% endif %}
+</div>
+<div class="d-none d-md-block col-1"></div>
