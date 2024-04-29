@@ -40,6 +40,9 @@
         {% if publication.links.doi %}
         <a class="text-primary" href="{{publication.links.doi}}" target="_blank">DOI</a>
         {% endif %}
+        {% if publication.bibtex %}
+        <a class="text-primary" role="button" data-bs-toggle="modal" data-bs-target="#{{pub_id}}-bibtex" aria-expanded="false" aria-controls="{{pub_id}}-bibtex">Bibtex</a>
+        {% endif %}
     </div>
     {% if publication.keywords %}
     <div class="publication-item-keywords">
@@ -59,6 +62,21 @@
         </div>
         <div class="offcanvas-body fw-light">
             {{publication.abstract | strip}}
+        </div>
+    </div>
+    {% endif %}
+    {% if publication.bibtex %}
+    <div class="modal fade" tabindex="-1" id="{{pub_id}}-bibtex" aria-labelledby="{{pub_id}}-bibtex-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Bibtex citation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <pre class="language-latex"><code>{{publication.bibtex | strip}}</code></pre>
+                </div>
+            </div>
         </div>
     </div>
     {% endif %}
