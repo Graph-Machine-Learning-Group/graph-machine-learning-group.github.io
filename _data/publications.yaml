@@ -1,7 +1,31 @@
 ---
+- title: 'Temporal Graph ODEs for Irregularly-Sampled Time Series'
+  links:
+    paper: https://arxiv.org/abs/2404.19508
+    code: https://github.com/gravins/TG-ODE
+  venue: International Joint Conferences on Artificial Intelligence
+  year: 2024
+  authors:
+  - A. Gravina
+  - id:dzambon
+  - D. Bacciu
+  - id:calippi
+  keywords:
+    - spatiotemporal graphs
+    - graph neural networks
+    - irregular sampling
+  abstract: Modern graph representation learning works mostly under the assumption of dealing with regularly sampled temporal graph snapshots, which is far from realistic, e.g., social networks and physical systems are characterized by continuous dynamics and sporadic observations. To address this limitation, we introduce the Temporal Graph Ordinary Differential Equation (TG-ODE) framework, which learns both the temporal and spatial dynamics from graph streams where the intervals between observations are not regularly spaced. We empirically validate the proposed approach on several graph benchmarks, showing that TG-ODE can achieve state-of-the-art performance in irregular graph stream tasks.
+  bibtex: >
+    @inproceedings{gravina2024temporal,
+      title = {Temporal Graph {{ODEs}} for Irregularly-Sampled Time Series},
+      booktitle = {Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence, {IJCAI-24}},
+      publisher = {International Joint Conferences on Artificial Intelligence Organization},
+      author = {Gravina, Alessio and Zambon, Daniele and Bacciu, Davide and Alippi, Cesare},
+      year = {2024}
+    }
 - title: 'Graph-based Virtual Sensing from Sparse and Partial Multivariate Observations'
   links:
-    paper: https://arxiv.org/abs/2402.12598
+    paper: https://openreview.net/forum?id=CAqdG2dy5s
     code: https://github.com/gdefe/ggnet-virtual-sensing
   venue: International Conference on Learning Representations
   year: 2024
@@ -17,6 +41,14 @@
     - imputation
     - graph learning
   abstract: Virtual sensing techniques allow for inferring signals at new unmonitored locations by exploiting spatio-temporal measurements coming from physical sensors at different locations. However, as the sensor coverage becomes sparse due to costs or other constraints, physical proximity cannot be used to support interpolation. In this paper, we overcome this challenge by leveraging dependencies between the target variable and a set of correlated variables (covariates) that can frequently be associated with each location of interest. From this viewpoint, covariates provide partial observability, and the problem consists of inferring values for unobserved channels by exploiting observations at other locations to learn how such variables can correlate. We introduce a novel graph-based methodology to exploit such relationships and design a graph deep learning architecture, named GgNet, implementing the framework. The proposed approach relies on propagating information over a nested graph structure that is used to learn dependencies between variables as well as locations. GgNet is extensively evaluated under different virtual sensing scenarios, demonstrating higher reconstruction accuracy compared to the state-of-the-art.
+  bibtex: >
+    @inproceedings{defelice2024graphbased,
+      title={Graph-Based {{Virtual Sensing}} from {{Sparse}} and {{Partial Multivariate Observations}}}, 
+      booktitle={The {{Twelfth International Conference}} on {{Learning Representations}}}, 
+      author={De Felice, Giovanni and Cini, Andrea and Zambon, Daniele and Gusev, Vladimir and Alippi, Cesare},
+      year={2024},
+      url={https://openreview.net/forum?id=CAqdG2dy5s}
+    }
 - title: Graph-based Forecasting with Missing Data through Spatiotemporal Downsampling
   links:
     paper: https://arxiv.org/abs/2402.10634
@@ -47,6 +79,7 @@
 - title: Graph Representation Learning (special session at ESANN 2023)
   links:
     paper: https://doi.org/10.14428/esann/2023.ES2023-4
+    doi: https://doi.org/10.14428/esann/2023.ES2023-4
   venue: ESANN
   year: 2023
   authors:
@@ -60,6 +93,17 @@
   keywords:
     - graph neural networks
   abstract: In a broad range of real-world machine learning applications, representing examples as graphs is crucial to avoid a loss of information. Due to this in the last few years, the definition of machine learning methods, particularly neural networks, for graph-structured inputs has been gaining increasing attention. In particular, Deep Graph Networks (DGNs) are nowadays the most commonly adopted models to learn a representation that can be used to address different tasks related to nodes, edges, or even entire graphs. This tutorial paper reviews fundamental concepts and open challenges of graph representation learning and summarizes the contributions that have been accepted for publication to the ESANN 2023 special session on the topic.
+  bibtex: >
+    @inproceedings{bacciu2023graph,
+      title = {Graph Representation Learning},
+      booktitle = {31st {{European Symposium}} on {{Artificial Neural Networks}}, {{Computational Intelligence}} and {{Machine Learning}}, {{ESANN}} 2023},
+      author = {Bacciu, Davide and Errica, Federico and Micheli, Alessio and Navarin, Nicol{\`o} and Pasa, Luca and Podda, Marco and Zambon, Daniele},
+      year = {2023},
+      pages = {1--10},
+      publisher = {i6doc. com},
+      doi = {10.14428/esann/2023.ES2023-4},
+      isbn = {978-2-87587-088-9}
+    }
 - title: "A Survey on Graph Neural Networks for Time Series: Forecasting, Classification, Imputation, and Anomaly Detection"
   links:
     paper: https://arxiv.org/abs/2307.03759
@@ -143,7 +187,7 @@
   abstract: The well-known Kalman filters model dynamical systems by relying on state-space representations with the next state updated, and its uncertainty controlled, by fresh information associated with newly observed system outputs. This paper generalizes, for the first time in the literature, Kalman and extended Kalman filters to discrete-time settings where inputs, states, and outputs are represented as attributed graphs whose topology and attributes can change with time. The setup allows us to adapt the framework to cases where the output is a vector or a scalar too (node/graph level tasks). Within the proposed theoretical framework, the unknown state-transition and the readout functions are learned end-to-end along with the downstream prediction task.
 - title: Taming Local Effects in Graph-based Spatiotemporal Forecasting
   links:
-    paper: https://arxiv.org/abs/2302.04071
+    paper: https://proceedings.neurips.cc/paper_files/paper/2023/hash/ad58c61c71efd5436134a3ecc87da6ea-Abstract-Conference.html
     code: https://github.com/Graph-Machine-Learning-Group/taming-local-effects-stgnns
   venue: Advances in Neural Information Processing Systems
   year: 2023
@@ -340,6 +384,17 @@
     the practical value of the test on both synthetic and real-world problems, and
     show how the test can be employed to assess the quality of spatio-temporal forecasting
     models by analyzing the prediction residuals appended to the graphs stream.
+  bibtex: >
+    @inproceedings{zambon2022azwhiteness,
+      title = {{{AZ-whiteness}} Test: A Test for Signal Uncorrelation on Spatio-Temporal Graphs},
+      booktitle = {Advances in Neural Information Processing Systems},
+      author = {Zambon, Daniele and Alippi, Cesare},
+      editor = {Koyejo, S. and Mohamed, S. and Agarwal, A. and Belgrave, D. and Cho, K. and Oh, A.},
+      year = {2022},
+      volume = {35},
+      pages = {11975--11986},
+      publisher = {Curran Associates, Inc.}
+    }
 - title: Sparse Graph Learning from Spatiotemporal Time Series
   links:
     paper: https://jmlr.org/papers/v24/22-1154.html
@@ -355,9 +410,21 @@
     - graph learning
     - forecasting
   abstract: Outstanding achievements of graph neural networks for spatiotemporal time series analysis show that relational constraints introduce an effective inductive bias into neural forecasting architectures. Often, however, the relational information characterizing the underlying data-generating process is unavailable and the practitioner is left with the problem of inferring from data which relational graph to use in the subsequent processing stages. We propose novel, principled - yet practical - probabilistic score-based methods that learn the relational dependencies as distributions over graphs while maximizing end-to-end the performance at task. The proposed graph learning framework is based on consolidated variance reduction techniques for Monte Carlo score-based gradient estimation, is theoretically grounded, and, as we show, effective in practice. In this paper, we focus on the time series forecasting problem and show that, by tailoring the gradient estimators to the graph learning problem, we are able to achieve state-of-the-art performance while controlling the sparsity of the learned graph and the computational scalability. We empirically assess the effectiveness of the proposed method on synthetic and real-world benchmarks, showing that the proposed solution can be used as a stand-alone graph identification procedure as well as a graph learning component of an end-to-end forecasting architecture.
+  bibtex: >
+    @article{cini2023sparse,
+      title = {Sparse {{Graph Learning}} from {{Spatiotemporal Time Series}}},
+      author = {Cini, Andrea and Zambon, Daniele and Alippi, Cesare},
+      year = {2023},
+      journal = {Journal of Machine Learning Research},
+      volume = {24},
+      number = {242},
+      pages = {1--36},
+      issn = {1533-7928}
+    } 
 - title: Deep learning for graphs (special session at ESANN 2022)
   links:
     paper: https://doi.org/10.14428/esann/2022.ES2022-7
+    doi: https://doi.org/10.14428/esann/2022.ES2022-7
   venue: European Symposium on Artificial Neural Networks, Computational Intelligence
     and Machine Learning
   year: 2022
@@ -377,6 +444,17 @@
     or even entire graphs. The present tutorial paper reviews fundamental concepts
     and open challenges of deep learning for graphs and summarizes the contributed
     papers of the ESANN 2022 special session on the topic.
+  bibtex: >
+    @inproceedings{bacciu2022deep,
+      title = {Deep Learning for Graphs},
+      booktitle = {30th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, {{ESANN}} 2022},
+      author = {Bacciu, Davide and Errica, Federico and Navarin, Nicol{\`o} and Pasa, Luca and Zambon, Daniele},
+      year = {2022},
+      pages = {481--490},
+      doi = {10.14428/esann/2022.ES2022-7},
+      isbn = {978-2-87587-084-1},
+      organization = {ESANN (i6doc. com)}
+    }
 - title: Spatio-Temporal Graph Neural Networks for Aggregate Load Forecasting
   venue: IEEE International Joint Conference on Neural Networks
   year: 2022
@@ -412,6 +490,7 @@
   links:
     paper: https://ieeexplore.ieee.org/document/9892295
     code: https://github.com/dzambon/graph-iforest
+    doi: https://doi.org/10.1109/IJCNN55064.2022.9892295
   keywords:
     - anomaly detection
   authors:
@@ -433,6 +512,18 @@
     anomalies and outlier graphs in a given dataset. An empirical analysis
     on synthetic and real-world graphs validates the effectiveness of the proposed
     method."
+  bibtex: >
+    @inproceedings{zambon2022graph,
+      title = {Graph {{iForest}}: {{Isolation}} of Anomalous and Outlier Graphs},
+      shorttitle = {Graph {{iForest}}},
+      booktitle = {2022 {{International Joint Conference}} on {{Neural Networks}} ({{IJCNN}})},
+      author = {Zambon, Daniele and Livi, Lorenzo and Alippi, Cesare},
+      year = {2022},
+      month = jul,
+      pages = {1--8},
+      issn = {2161-4407},
+      doi = {10.1109/IJCNN55064.2022.9892295}
+    }
 - title: Understanding Catastrophic Forgetting of Gated Linear Networks in Continual
     Learning
   venue: IEEE International Joint Conference on Neural Networks
@@ -442,6 +533,7 @@
     - continual learning
   links:
     paper: https://ieeexplore.ieee.org/document/9892142
+    doi: https://doi.org/10.1109/IJCNN55064.2022.9892142
     code: https://github.com/matteo-munari/GrowPGLN
   authors:
   - M. Munari
@@ -464,12 +556,24 @@
     assessment shows that the proposed approach is more robust to different data standardizations
     compared to the original one, based on a halfspace gating mechanism, and shows
     improved predictive performance.
+  bibtex: >
+    @inproceedings{munari2022understanding,
+      title = {Understanding {{Catastrophic Forgetting}} of {{Gated Linear Networks}} in {{Continual Learning}}},
+      booktitle = {2022 {{International Joint Conference}} on {{Neural Networks}} ({{IJCNN}})},
+      author = {Munari, Matteo and Pasa, Luca and Zambon, Daniele and Alippi, Cesare and Navarin, Nicol{\`o}},
+      year = {2022},
+      month = jul,
+      pages = {1--8},
+      issn = {2161-4407},
+      doi = {10.1109/IJCNN55064.2022.9892142}
+    }
 - title: Understanding Pooling in Graph Neural Networks
   links:
     paper: https://arxiv.org/abs/2110.05292
+    doi: https://doi.org/10.1109/TNNLS.2022.3190922
     code: https://github.com/danielegrattarola/SRC
   venue: IEEE Transactions on Neural Networks and Learning Systems
-  year: 2022
+  year: 2024
   authors:
   - id:dgrattarola
   - id:dzambon
@@ -490,6 +594,18 @@
     methods proposed in recent literature. We propose criteria to evaluate the performance
     of a pooling operator and use them to investigate and contrast the behavior of
     different classes of the taxonomy on a variety of tasks.
+  bibtex: >
+    @article{grattarola2024understanding,
+      title = {Understanding {{Pooling}} in {{Graph Neural Networks}}},
+      author = {Grattarola, Daniele and Zambon, Daniele and Bianchi, Filippo Maria and Alippi, Cesare},
+      year = {2024},
+      month = feb,
+      journal = {IEEE Transactions on Neural Networks and Learning Systems},
+      volume = {35},
+      number = {2},
+      pages = {2708--2718},
+      doi = {10.1109/TNNLS.2022.3190922}
+    }
 - title: 'Deep Learning for Time Series Forecasting: The Electric Load Case'
   links:
     paper: https://arxiv.org/abs/1907.09207
@@ -520,6 +636,7 @@
 - title: Seizure localisation with attention-based graph neural networks
   links:
     paper: https://www.biorxiv.org/content/10.1101/2020.12.03.409979v1.abstract
+    doi: https://doi.org/10.1016/j.eswa.2022.117330
   venue: Expert Systems with Applications
   year: 2022
   authors:
@@ -549,6 +666,17 @@
     We also show that our GNN exhibits uncertainty on those patients for which the
     clinical localisation was also unsuccessful, highlighting the robustness of the
     proposed approach."
+  bibtex: >
+    @article{GRATTAROLA2022117330,
+      title = {Seizure localisation with attention-based graph neural networks},
+      journal = {Expert Systems with Applications},
+      volume = {203},
+      pages = {117330},
+      year = {2022},
+      issn = {0957-4174},
+      doi = {10.1016/j.eswa.2022.117330},
+      author = {Daniele Grattarola and Lorenzo Livi and Cesare Alippi and Richard Wennberg and Taufik A. Valiante},
+    }
 - title: 'Learning dynamical systems using dynamical systems: the reservoir computing
     approach'
   links:
@@ -661,6 +789,17 @@
     1) learning the transition rule of a GCA on a Voronoi tessellation; 2) imitating
     the behaviour of a group of flocking agents; 3) learning a rule that converges
     to a desired target state."
+  bibtex: >
+    @inproceedings{NEURIPS2021_af87f7cd,
+      author = {Grattarola, Daniele and Livi, Lorenzo and Alippi, Cesare},
+      booktitle = {Advances in Neural Information Processing Systems},
+      editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+      pages = {20983--20994},
+      publisher = {Curran Associates, Inc.},
+      title = {Learning Graph Cellular Automata},
+      volume = {34},
+      year = {2021}
+    }
 - title: Gaussian Approximation for Bias Reduction in Q-Learning
   links:
     paper: https://jmlr.org/papers/v22/20-633.html
@@ -736,6 +875,7 @@
 - title: Deep learning for graphs (special session at ESANN 2021)
   links:
     paper: https://doi.org/10.14428/esann/2021.ES2021-5
+    doi: https://doi.org/10.14428/esann/2021.ES2021-5
   venue: European Symposium on Artificial Neural Networks
   year: 2021
   keywords:
@@ -805,9 +945,18 @@
     training data for a graph edit network and that an optimal mapping yields edit
     scripts that are almost as short as the graph edit distance between the graphs.
     We further provide a proof-of-concept.
+  bibtex: >
+    @inproceedings{paassen2021graph,
+      title = {Graph Edit Networks},
+      booktitle = {International Conference on Learning Representations ({{ICLR}})},
+      author = {Paassen, Benjamin and Grattarola, Daniele and Zambon, Daniele and Alippi, Cesare and Hammer, Barbara Eva},
+      year = {2021}
+      url={https://openreview.net/forum?id=dlEJsyHGeaL}
+    }
 - title: Graph Neural Networks in TensorFlow and Keras with Spektral
   links:
     paper: https://arxiv.org/abs/2006.12138
+    doi: https://doi.org/10.1109/MCI.2020.3039072
     code: https://github.com/danielegrattarola/spektral/
   venue: IEEE Computational Intelligence Magazine
   year: 2021
@@ -831,6 +980,18 @@
     deep learning practitioners alike. In this work, we present an overview of Spektral's
     features and report the performance of the methods implemented by the library
     in scenarios of node classification, graph classification, and graph regression.
+  bibtex: >
+    @ARTICLE{9321429,
+      author={Grattarola, Daniele and Alippi, Cesare},
+      journal={IEEE Computational Intelligence Magazine}, 
+      title={Graph Neural Networks in TensorFlow and Keras with Spektral [Application Notes]}, 
+      year={2021},
+      volume={16},
+      number={1},
+      pages={99-106},
+      keywords={Graph neural networks;Predictive models;Biological system modeling;Computational modeling;Deep learning;Benchmark testing},
+      doi={10.1109/MCI.2020.3039072}
+    }
 - title: Learn to Synchronize, Synchronize to Learn
   links:
     paper: https://arxiv.org/abs/2010.02860
@@ -975,6 +1136,18 @@
     that accompany GRNF ensure that the considered graph distance is metric, hence
     allowing to distinguish any pair of non-isomorphic graphs, and that GRNF approximately
     preserves its metric structure."
+  bibtex: >
+    @inproceedings{zambon2020graph,
+      title = {Graph {{Random Neural Features}} for {{Distance-Preserving Graph Representations}}},
+      booktitle = {Proceedings of the 37th {{International Conference}} on {{Machine Learning}}},
+      author = {Zambon, Daniele and Alippi, Cesare and Livi, Lorenzo},
+      editor = {Daum{\`e} III, Hal and Singh, Aarti},
+      year = {2020},
+      month = nov,
+      pages = {10968--10977},
+      publisher = {PMLR},
+      issn = {2640-3498}
+    }
 - title: Spectral Clustering with Graph Neural Networks for Graph Pooling
   links:
     paper: https://arxiv.org/abs/1907.00481
@@ -1043,6 +1216,7 @@
 - title: Autoregressive Models for Sequences of Graphs
   links:
     paper: https://arxiv.org/abs/1903.07299
+    doi: https://doi.org/10.1109/IJCNN.2019.8852131
     code: https://github.com/dzambon/NGAR
   venue: IEEE International Joint Conference on Neural Networks
   year: 2019
@@ -1059,6 +1233,18 @@
     topology, and attributes associated with nodes and edges. A graph neural network
     is also proposed to learn the AR function associated with the graph-generating
     process, and subsequently predict the next graph in a sequence.
+  bibtex: >
+    @inproceedings{zambon2020graph,
+      title = {Graph {{Random Neural Features}} for {{Distance-Preserving Graph Representations}}},
+      booktitle = {Proceedings of the 37th {{International Conference}} on {{Machine Learning}}},
+      author = {Zambon, Daniele and Alippi, Cesare and Livi, Lorenzo},
+      editor = {Daum{\`e} III, Hal and Singh, Aarti},
+      year = {2020},
+      month = nov,
+      pages = {10968--10977},
+      publisher = {PMLR},
+      issn = {2640-3498}
+    }
 - title: Adversarial Autoencoders with Constant-Curvature Latent Manifolds
   links:
     paper: https://arxiv.org/abs/1812.04314
@@ -1082,6 +1268,7 @@
 - title: Change-Point Methods on a Sequence of Graphs
   links:
     paper: https://arxiv.org/abs/1805.07113
+    doi: https://doi.org/10.1109/TSP.2019.2953596
     code: https://github.com/dzambon/cpm-graph-sequence
   venue: IEEE Transactions on Signal Processing
   year: 2019
@@ -1102,13 +1289,27 @@
     level; an estimate for the change point is provided as well. We ground our methods
     on theoretical results that show how the inference in the numerical vector space
     is related to the one in graph domain, and vice-versa.
+  bibtex: >
+    @article{zambon2019changepoint,
+      title = {Change-{{Point Methods}} on a {{Sequence}} of {{Graphs}}},
+      author = {Zambon, Daniele and Alippi, Cesare and Livi, Lorenzo},
+      year = {2019},
+      month = dec,
+      journal = {IEEE Transactions on Signal Processing},
+      volume = {67},
+      number = {24},
+      pages = {6327--6341},
+      issn = {1941-0476},
+      doi = {10.1109/TSP.2019.2953596}
+    }
 - title: Change Detection in Graph Streams by Learning Graph Embeddings on Constant-Curvature
     Manifolds
   links:
     paper: https://arxiv.org/abs/1805.06299
+    doi: https://doi.org/10.1109/TNNLS.2019.2927301
     code: https://github.com/danielegrattarola/cdt-ccm-aae
   venue: IEEE Transactions on Neural Networks and Learning Systems
-  year: 2019
+  year: 2020
   authors:
   - id:dgrattarola
   - id:dzambon
@@ -1124,6 +1325,19 @@
     First, via a novel approach based on adversarial learning, we compute graph embeddings
     by training an autoencoder to represent graphs on CCMs. Second, we introduce two
     novel change detection tests operating on CCMs.
+  bibtex: >
+    @article{grattarola2020change,
+      title = {Change {{Detection}} in {{Graph Streams}} by {{Learning Graph Embeddings}} on {{Constant-Curvature Manifolds}}},
+      author = {Grattarola, Daniele and Zambon, Daniele and Livi, Lorenzo and Alippi, Cesare},
+      year = {2020},
+      month = jun,
+      journal = {IEEE Transactions on Neural Networks and Learning Systems},
+      volume = {31},
+      number = {6},
+      pages = {1856--1869},
+      issn = {2162-237X, 2162-2388},
+      doi = {10.1109/TNNLS.2019.2927301},
+    }
 - title: A Characterization of the Edge of Criticality in Binary Echo State Networks
   links:
     paper: https://arxiv.org/abs/1810.01742
@@ -1146,6 +1360,7 @@
     Manifold Embeddings
   links:
     paper: https://arxiv.org/abs/1805.01360
+    doi: https://doi.org/10.1109/IJCNN.2018.8489762
   venue: IEEE International Joint Conference on Neural Networks
   year: 2018
   authors:
@@ -1161,9 +1376,21 @@
     of attributed graphs. The proposed methodology consists in embedding graphs into
     a geometric space and perform change detection there by means of conventional
     methods for numerical streams.
+  bibtex: >
+    @inproceedings{zambon2018anomaly,
+      title = {Anomaly and {{Change Detection}} in {{Graph Streams}} through {{Constant-Curvature Manifold Embeddings}}},
+      booktitle = {2018 {{International Joint Conference}} on {{Neural Networks}} ({{IJCNN}})},
+      author = {Zambon, Daniele and Livi, Lorenzo and Alippi, Cesare},
+      year = {2018},
+      month = jul,
+      pages = {1--7},
+      issn = {2161-4407},
+      doi = {10.1109/IJCNN.2018.8489762}
+    }
 - title: Concept Drift and Anomaly Detection in Graph Streams
   links:
     paper: https://arxiv.org/abs/1706.06941
+    doi: https://doi.org/10.1109/TNNLS.2018.2804443}
   venue: IEEE Transactions on Neural Networks and Learning Systems
   year: 2018
   authors:
@@ -1179,9 +1406,23 @@
     by embedding every graph of the stream into a vector domain, where a conventional
     multivariate change detection procedure can be easily applied. We ground the soundness
     of our proposal by proving several theoretical results.
+  bibtex: >
+    @article{zambon2018concept,
+      title = {Concept {{Drift}} and {{Anomaly Detection}} in {{Graph Streams}}},
+      author = {Zambon, Daniele and Alippi, Cesare and Livi, Lorenzo},
+      year = {2018},
+      month = nov,
+      journal = {IEEE Transactions on Neural Networks and Learning Systems},
+      volume = {29},
+      number = {11},
+      pages = {5592--5605},
+      issn = {2162-2388},
+      doi = {10.1109/TNNLS.2018.2804443}
+    }
 - title: Detecting Changes in Sequences of Attributed Graphs
   links:
     paper: https://ieeexplore.ieee.org/document/8285273
+    doi: https://doi.org/10.1109/SSCI.2017.8285273
   venue: IEEE Symposium Series on Computational Intelligence
   year: 2017
   authors:
@@ -1196,3 +1437,13 @@
     change detection procedures exist and can be easily applied. We introduce the
     methodology and focus on expanding experimental evaluations on controlled yet
     relevant examples involving geometric graphs and Markov chains.
+  bibtex: >
+    @inproceedings{zambon2017detecting,
+      title = {Detecting Changes in Sequences of Attributed Graphs},
+      booktitle = {2017 {{IEEE Symposium Series}} on {{Computational Intelligence}} ({{SSCI}})},
+      author = {Zambon, Daniele and Livi, Lorenzo and Alippi, Cesare},
+      year = {2017},
+      month = nov,
+      pages = {1--7},
+      doi = {10.1109/SSCI.2017.8285273}
+    }
