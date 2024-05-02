@@ -227,8 +227,19 @@
 - title: "Peak shaving in distribution networks using stationary energy storage systems: A Swiss case study"
   links:
     paper: https://www.sciencedirect.com/science/article/pii/S2352467723000267
+    doi: https://doi.org/10.1016/j.segan.2023.101018
   venue: Sustainable Energy, Grids and Networks, Volume 34
   year: 2023
+  bibtex: >
+    @article{efkarpidis2023peak,
+		title={Peak shaving in distribution networks using stationary energy storage systems: A Swiss case study},
+		author={Efkarpidis, Nikolaos A and Imoscopi, Stefano and Geidl, Martin and Cini, Andrea and Lukovic, Slobodan and Alippi, Cesare and Herbst, Ingo},
+		journal={Sustainable Energy, Grids and Networks},
+		volume={34},
+		pages={101018},
+		year={2023},
+		publisher={Elsevier}
+	}
   authors:
   - N. A. Efkarpidis
   - id:simoscopi
