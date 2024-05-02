@@ -1,3 +1,5 @@
+- date: 2024/05
+  text: 'Two papers accepted at <strong>ICML 2024</strong>! <a href="https://arxiv.org/abs/2305.19183">Graph-based Time Series Clustering for End-to-End Hierarchical Forecasting</a> (Cini et al.) and <a href="https://arxiv.org/abs/2402.10634">Graph-based Forecasting with Missing Data through Spatiotemporal Downsampling</a> (Marisca et al.).'
 - date: 2023/12
   text: 'Submit by Jan. 15 to our <strong>special sessions</strong> <a href="https://sites.google.com/view/dl4g-2024">Deep Learning for Graphs</a> at IEEE WCCI 2024 in Yokohama, Japan (Jun. 30-Jul. 5).'
 - date: 2023/09
@@ -17,7 +19,5 @@
 </a> (ESANN 2023, Oct. 4-6) and <a href="https://sites.google.com/view/dl4g-2023">Deep Learning for Graphs</a> (IEEE IJCNN 2023, July. 18-23).'
 - date: 2022/12
   text: Our paper <a href="https://arxiv.org/abs/2209.06520">Scalable Spatiotemporal Graph Neural Networks</a> (Cini et al.) won the <strong>best paper award</strong> at the NeurIPS 2022 <a href="https://sites.google.com/view/tglworkshop2022/home">Temporal Graph Learning Workshop</a> and has been accepted at <strong>AAAI 2023</strong>!
-# # - date: 2022/11
-# #   text: Our paper <a href="https://arxiv.org/abs/2209.06520">Scalable Spatiotemporal Graph Neural Networks</a> (Cini et al.) has been accepted at <strong>AAAI 2023</strong>!
 - date: 2022/09
   text: 'Our papers <a href="https://arxiv.org/abs/2204.11135">AZ-whiteness test: a test for uncorrelated noise on spatio-temporal graphs</a> (Zambon &amp; Alippi) and <a href="https://arxiv.org/abs/2205.13479">Learning to Reconstruct Missing Data from Spatiotemporal Graphs with Sparse Observations</a> (Marisca et al.) have been accepted at <strong>NeurIPS 2022</strong>!'
