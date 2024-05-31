@@ -1,4 +1,29 @@
 ---
+- title: 'Learning Latent Graph Structures and their Uncertainty'
+  links:
+    paper: https://arxiv.org/abs/2405.19933
+  venue: preprint
+  year: 2024
+  authors:
+  - id:amanenti
+  - id:dzambon
+  - id:calippi
+  keywords:
+    - graph structure learning
+    - graph neural networks
+    - model calibration
+  abstract: Within a prediction task, Graph Neural Networks (GNNs) use relational information as an inductive bias to enhance the model's accuracy. As task-relevant relations might be unknown, graph structure learning approaches have been proposed to learn them while solving the downstream prediction task. In this paper, we demonstrate that minimization of a point-prediction loss function, e.g., the mean absolute error, does not guarantee proper learning of the latent relational information and its associated uncertainty. Conversely, we prove that a suitable loss function on the stochastic model outputs simultaneously grants (i) the unknown adjacency matrix latent distribution and (ii) optimal performance on the prediction task. Finally, we propose a sampling-based method that solves this joint learning task. Empirical results validate our theoretical claims and demonstrate the effectiveness of the proposed approach.
+  bibtex: >
+    @misc{manenti2024learning,
+      title = {Learning {{Latent Graph Structures}} and Their {{Uncertainty}}},
+      author = {Manenti, Alessandro and Zambon, Daniele and Alippi, Cesare},
+      year = {2024},
+      month = may,
+      number = {arXiv:2405.19933},
+      primaryclass = {cs, stat},
+      publisher = {arXiv},
+      archiveprefix = {arxiv}
+    }
 - title: 'Temporal Graph ODEs for Irregularly-Sampled Time Series'
   links:
     paper: https://arxiv.org/abs/2404.19508
@@ -39,7 +64,7 @@
     - spatiotemporal graphs
     - graph neural networks
     - imputation
-    - graph learning
+    - graph structure learning
   abstract: Virtual sensing techniques allow for inferring signals at new unmonitored locations by exploiting spatio-temporal measurements coming from physical sensors at different locations. However, as the sensor coverage becomes sparse due to costs or other constraints, physical proximity cannot be used to support interpolation. In this paper, we overcome this challenge by leveraging dependencies between the target variable and a set of correlated variables (covariates) that can frequently be associated with each location of interest. From this viewpoint, covariates provide partial observability, and the problem consists of inferring values for unobserved channels by exploiting observations at other locations to learn how such variables can correlate. We introduce a novel graph-based methodology to exploit such relationships and design a graph deep learning architecture, named GgNet, implementing the framework. The proposed approach relies on propagating information over a nested graph structure that is used to learn dependencies between variables as well as locations. GgNet is extensively evaluated under different virtual sensing scenarios, demonstrating higher reconstruction accuracy compared to the state-of-the-art.
   bibtex: >
     @inproceedings{defelice2024graphbased,
@@ -183,7 +208,7 @@
   keywords:
     - spatiotemporal graphs
     - state-space models
-    - graph learning
+    - graph structure learning
   abstract: The well-known Kalman filters model dynamical systems by relying on state-space representations with the next state updated, and its uncertainty controlled, by fresh information associated with newly observed system outputs. This paper generalizes, for the first time in the literature, Kalman and extended Kalman filters to discrete-time settings where inputs, states, and outputs are represented as attributed graphs whose topology and attributes can change with time. The setup allows us to adapt the framework to cases where the output is a vector or a scalar too (node/graph level tasks). Within the proposed theoretical framework, the unknown state-transition and the readout functions are learned end-to-end along with the downstream prediction task.
 - title: Taming Local Effects in Graph-based Spatiotemporal Forecasting
   links:
@@ -232,14 +257,14 @@
   year: 2023
   bibtex: >
     @article{efkarpidis2023peak,
-		title={Peak shaving in distribution networks using stationary energy storage systems: A Swiss case study},
-		author={Efkarpidis, Nikolaos A and Imoscopi, Stefano and Geidl, Martin and Cini, Andrea and Lukovic, Slobodan and Alippi, Cesare and Herbst, Ingo},
-		journal={Sustainable Energy, Grids and Networks},
-		volume={34},
-		pages={101018},
-		year={2023},
-		publisher={Elsevier}
-	}
+      title={Peak shaving in distribution networks using stationary energy storage systems: A Swiss case study},
+      author={Efkarpidis, Nikolaos A and Imoscopi, Stefano and Geidl, Martin and Cini, Andrea and Lukovic, Slobodan and Alippi, Cesare and Herbst, Ingo},
+      journal={Sustainable Energy, Grids and Networks},
+      volume={34},
+      pages={101018},
+      year={2023},
+      publisher={Elsevier}
+    }
   authors:
   - N. A. Efkarpidis
   - id:simoscopi
@@ -265,7 +290,7 @@
   keywords:
     - spatiotemporal graphs
     - state-space models
-    - graph learning
+    - graph structure learning
   abstract: State-space models constitute an effective modeling tool to describe multivariate time series and operate by maintaining an updated representation of the system state from which predictions are made. Within this framework, relational inductive biases, e.g., associated with functional dependencies existing among signals, are not explicitly exploited leaving unattended great opportunities for effective modeling approaches. The manuscript aims, for the first time, at filling this gap by matching state-space modeling and spatio-temporal data where the relational information, say the functional graph capturing latent dependencies, is learned directly from data and is allowed to change over time. Within a probabilistic formulation that accounts for the uncertainty in the data-generating process, an encoder-decoder architecture is proposed to learn the state-space model end-to-end on a downstream task. The proposed methodological framework generalizes several state-of-the-art methods and demonstrates to be effective in extracting meaningful relational information while achieving optimal forecasting performance in controlled environments.
 - title: Scalable Spatiotemporal Graph Neural Networks
   links:
@@ -418,7 +443,7 @@
   - id:calippi
   keywords:
     - spatiotemporal graphs
-    - graph learning
+    - graph structure learning
     - forecasting
   abstract: Outstanding achievements of graph neural networks for spatiotemporal time series analysis show that relational constraints introduce an effective inductive bias into neural forecasting architectures. Often, however, the relational information characterizing the underlying data-generating process is unavailable and the practitioner is left with the problem of inferring from data which relational graph to use in the subsequent processing stages. We propose novel, principled - yet practical - probabilistic score-based methods that learn the relational dependencies as distributions over graphs while maximizing end-to-end the performance at task. The proposed graph learning framework is based on consolidated variance reduction techniques for Monte Carlo score-based gradient estimation, is theoretically grounded, and, as we show, effective in practice. In this paper, we focus on the time series forecasting problem and show that, by tailoring the gradient estimators to the graph learning problem, we are able to achieve state-of-the-art performance while controlling the sparsity of the learned graph and the computational scalability. We empirically assess the effectiveness of the proposed method on synthetic and real-world benchmarks, showing that the proposed solution can be used as a stand-alone graph identification procedure as well as a graph learning component of an end-to-end forecasting architecture.
   bibtex: >
