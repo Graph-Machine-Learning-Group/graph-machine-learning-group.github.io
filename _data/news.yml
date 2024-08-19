@@ -1,3 +1,5 @@
+- date: 2024/08
+  text: 'Our <a href="https://ieeexplore.ieee.org/document/10636792">survey on GNNs for time series</a> has been accepted at <strong>IEEE TPAMI</strong>!'
 - date: 2024/05
   text: 'Two papers accepted at <strong>ICML 2024</strong>! <a href="https://arxiv.org/abs/2305.19183">Graph-based Time Series Clustering for End-to-End Hierarchical Forecasting</a> (Cini et al.) and <a href="https://arxiv.org/abs/2402.10634">Graph-based Forecasting with Missing Data through Spatiotemporal Downsampling</a> (Marisca et al.).'
 - date: 2024/04

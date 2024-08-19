@@ -132,8 +132,8 @@
 - title: "A Survey on Graph Neural Networks for Time Series: Forecasting, Classification, Imputation, and Anomaly Detection"
   links:
     paper: https://arxiv.org/abs/2307.03759
-  venue: Preprint
-  year: 2023
+  venue: IEEE Transactions on Pattern Analysis and Machine Intelligence
+  year: 2024
   authors:
   - M. Jin
   - H. Y. Koh
@@ -150,6 +150,14 @@
     - imputation
     - anomaly detection
   abstract: "Time series are the primary data type used to record dynamic system measurements and generated in great volume by both physical sensors and online processes (virtual sensors). Time series analytics is therefore crucial to unlocking the wealth of information implicit in available data. With the recent advancements in graph neural networks (GNNs), there has been a surge in GNN-based approaches for time series analysis. These approaches can explicitly model inter-temporal and inter-variable relationships, which traditional and other deep neural network-based methods struggle to do. In this survey, we provide a comprehensive review of graph neural networks for time series analysis (GNN4TS), encompassing four fundamental dimensions: forecasting, classification, anomaly detection, and imputation. Our aim is to guide designers and practitioners to understand, build applications, and advance research of GNN4TS. At first, we provide a comprehensive task-oriented taxonomy of GNN4TS. Then, we present and discuss representative research works and introduce mainstream applications of GNN4TS. A comprehensive discussion of potential future research directions completes the survey. This survey, for the first time, brings together a vast array of knowledge on GNN-based time series research, highlighting foundations, practical applications, and opportunities of graph neural networks for time series analysis."
+  bibtex: >
+    @article{jin2024survey,
+      author={Jin, Ming and Koh, Huan Yee and Wen, Qingsong and Zambon, Daniele and Alippi, Cesare and Webb, Geoffrey I. and King, Irwin and Pan, Shirui},
+      journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+      title={A Survey on Graph Neural Networks for Time Series: Forecasting, Classification, Imputation, and Anomaly Detection}, 
+      year={2024},
+      doi={10.1109/TPAMI.2024.3443141}
+    }
 - title: Graph-based Time Series Clustering for End-to-End Hierarchical Forecasting
   links:
     paper: https://arxiv.org/abs/2305.19183
