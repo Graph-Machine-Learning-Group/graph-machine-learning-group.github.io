@@ -77,7 +77,7 @@
 - title: Graph-based Forecasting with Missing Data through Spatiotemporal Downsampling
   links:
     paper: https://arxiv.org/abs/2402.10634
-  venue: <i>To appear in</i> International Conference on Machine Learning
+  venue: International Conference on Machine Learning
   year: 2024
   authors:
   - id:imarisca
@@ -161,7 +161,7 @@
 - title: Graph-based Time Series Clustering for End-to-End Hierarchical Forecasting
   links:
     paper: https://arxiv.org/abs/2305.19183
-  venue: <i>To appear in</i> International Conference on Machine Learning
+  venue: International Conference on Machine Learning
   year: 2024
   authors:
   - id:acini

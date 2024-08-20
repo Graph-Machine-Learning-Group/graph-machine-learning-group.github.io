@@ -30,8 +30,8 @@
   name: Andrea
   surname: Cini
   group: team
-  role: Ph.D. Student
-  description: He is interested in relational inductive biases for the processing of spatiotemporal data.
+  role: Post-doc Researcher
+  description: Machine learning for time series forecasting and graph processing.
   links:
     website: https://andreacini.github.io/
     github: andreacini
