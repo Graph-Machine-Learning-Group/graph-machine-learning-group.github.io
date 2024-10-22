@@ -57,9 +57,11 @@
   surname: Butera
   group: team
   role: Ph.D. Student
-  description: Working on object detection and computer vision.
+  description: His research focuses on model adaptability and generalization for spatiotemporal data.
   links:
     website: https://usi.to/7hz
+    github: LucaButera
+    scholar: b-l-TIUAAAAJ
   img: LB.jpg
 - id: amanenti 
   name: Alessandro
