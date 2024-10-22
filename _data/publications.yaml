@@ -1,4 +1,31 @@
 ---
+- title: 'On the Regularization of Learnable Embeddings for Time Series Processing'
+  links:
+    paper: https://arxiv.org/abs/2410.14630
+  venue: preprint
+  year: 2024
+  authors:
+  - id:lbutera
+  - G. De Felice
+  - id:acini
+  - id:calippi
+  keywords:
+    - spatiotemporal data
+    - graph neural networks
+    - regularization
+    - transfer learning
+    - global-local models
+  abstract: In processing multiple time series, accounting for the individual features of each sequence can be challenging. To address this, modern deep learning methods for time series analysis combine a shared (global) model with local layers, specific to each time series, often implemented as learnable embeddings. Ideally, these local embeddings should encode meaningful representations of the unique dynamics of each sequence. However, when these are learned end-to-end as parameters of a forecasting model, they may end up acting as mere sequence identifiers. Shared processing blocks may then become reliant on such identifiers, limiting their transferability to new contexts. In this paper, we address this issue by investigating methods to regularize the learning of local learnable embeddings for time series processing. Specifically, we perform the first extensive empirical study on the subject and show how such regularizations consistently improve performance in widely adopted architectures. Furthermore, we show that methods preventing the co-adaptation of local and global parameters are particularly effective in this context. This hypothesis is validated by comparing several methods preventing the downstream models from relying on sequence identifiers, going as far as completely resetting the embeddings during training. The obtained results provide an important contribution to understanding the interplay between learnable local parameters and shared processing layers: a key challenge in modern time series processing models and a step toward developing effective foundation models for time series.
+  bibtex: >
+    @misc{butera2024regularization,
+      title={On the Regularization of Learnable Embeddings for Time Series Processing}, 
+      author={Butera, Luca and De Felice, Giovanni and Cini, Andrea and Alippi, Cesare},
+      year={2024},
+      eprint={2410.14630},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2410.14630}, 
+    }
 - title: 'Learning Latent Graph Structures and their Uncertainty'
   links:
     paper: https://arxiv.org/abs/2405.19933
@@ -189,11 +216,12 @@
     - relational inductive biases
     - graph neural networks
   abstract: We focus on learning composable policies to control a variety of physical agents with possibly different structures. Among state-of-the-art methods, prominent approaches exploit graph-based representations and weight-sharing modular policies based on the message-passing framework. However, as shown by recent literature, message passing can create bottlenecks in information propagation and hinder global coordination. This drawback can become even more problematic in tasks where high-level planning is crucial. In fact, in similar scenarios, each modular policy - e.g., controlling a joint of a robot - would request to coordinate not only for basic locomotion but also achieve high-level goals, such as navigating a maze. A classical solution to avoid similar pitfalls is to resort to hierarchical decision-making. In this work, we adopt the Feudal Reinforcement Learning paradigm to develop agents where control actions are the outcome of a hierarchical (pyramidal) message-passing process. In the proposed Feudal Graph Reinforcement Learning (FGRL) framework, high-level decisions at the top level of the hierarchy are propagated through a layered graph representing a hierarchy of policies. Lower layers mimic the morphology of the physical system and upper layers can capture more abstract sub-modules. The purpose of this preliminary work is to formalize the framework and provide proof-of-concept experiments on benchmark environments (MuJoCo locomotion tasks). Empirical evaluation shows promising results on both standard benchmarks and zero-shot transfer learning settings.
-- title: Relational Inductive Biases for Object-Centric Image Generation
+- title: Object-Centric Relational Representations for Image Generation
   links:
     paper: https://arxiv.org/abs/2303.14681
-  venue: Preprint
-  year: 2023
+    code: https://github.com/LucaButera/graphose_ocrrig
+  venue: Transactions on Machine Learning Research
+  year: 2024
   authors:
   - id:lbutera
   - id:acini
@@ -203,7 +231,16 @@
     - relational inductive biases
     - image generation
     - graph neural networks
-  abstract: Conditioning image generation on specific features of the desired output is a key ingredient of modern generative models. Most existing approaches focus on conditioning the generation based on free-form text, while some niche studies use scene graphs to describe the content of the image to be generated. This paper explores novel methods to condition image generation that are based on object-centric relational representations. In particular, we propose a methodology to condition the generation of a particular object in an image on the attributed graph representing its structure and associated style. We show that such architectural biases entail properties that facilitate the manipulation and conditioning of the generative process and allow for regularizing the training procedure. The proposed framework is implemented by means of a neural network architecture combining convolutional operators that operate on both the underlying graph and the 2D grid that becomes the output image. The resulting model learns to generate multi-channel masks of the object that can be used as a soft inductive bias in the downstream generative task. Empirical results show that the proposed approach compares favorably against relevant baselines on image generation conditioned on human poses.
+  abstract: Conditioning image generation on specific features of the desired output is a key ingredient of modern generative models. However, existing approaches lack a general and unified way of representing structural and semantic conditioning at diverse granularity levels. This paper explores a novel method to condition image generation, based on object-centric relational representations. In particular, we propose a methodology to condition the generation of objects in an image on the attributed graph representing their structure and the associated semantic information. We show that such architectural biases entail properties that facilitate the manipulation and conditioning of the generative process and allow for regularizing the training procedure. The proposed conditioning framework is implemented by means of a neural network that learns to generate a 2D, multi-channel, layout mask of the objects, which can be used as a soft inductive bias in the downstream generative task. To do so, we leverage both 2D and graph convolutional operators. We also propose a novel benchmark for image generation consisting of a synthetic dataset of images paired with their relational representation. Empirical results show that the proposed approach compares favorably against relevant baselines.
+  bibtex: >
+    @article{butera2024objectcentric,
+      title={Object-Centric Relational Representations for Image Generation},
+      author={Luca Butera and Andrea Cini and Alberto Ferrante and Cesare Alippi},
+      journal={Transactions on Machine Learning Research},
+      issn={2835-8856},
+      year={2024},
+      url={https://openreview.net/forum?id=7kWjB9zW90}
+    }
 - title: Graph Kalman Filters
   links:
     paper: https://arxiv.org/abs/2303.12021
