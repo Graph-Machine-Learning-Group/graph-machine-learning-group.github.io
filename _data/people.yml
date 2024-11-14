@@ -44,7 +44,7 @@
   surname: Marisca
   group: team
   role: Ph.D. Student
-  description: His studies concern the analysis and prediction of irregular spatiotemporal data.
+  description: He studies the interplay between graph deep learning and irregular spatiotemporal data.
   links:
     website: https://marshka.github.io/
     github: marshka
@@ -89,6 +89,18 @@
     linkedin: tommasomarzi
     scholar: uYZ6I-MAAAAJ
   img: TM.jpg
+- id: vmoretti 
+  name: Valentina
+  surname: Moretti
+  group: team
+  role: Ph.D. Student
+  description: Her research focuses on time series forecasting in non-stationary environments.
+  links:
+    github: valentina-moretti
+    twitter: Vale__moretti
+    linkedin: valentina-moretti-
+    # scholar: 
+  img: VM.jpg
 - id: simoscopi 
   name: Stefano
   surname: Imoscopi
