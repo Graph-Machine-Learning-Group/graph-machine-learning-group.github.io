@@ -30,8 +30,8 @@
   name: Andrea
   surname: Cini
   group: team
-  role: Ph.D. Student
-  description: He is interested in relational inductive biases for the processing of spatiotemporal data.
+  role: Post-doc Researcher
+  description: His research focuses on machine learning methods for time series analysis and graph processing.
   links:
     website: https://andreacini.github.io/
     github: andreacini
@@ -44,7 +44,7 @@
   surname: Marisca
   group: team
   role: Ph.D. Student
-  description: His studies concern the analysis and prediction of irregular spatiotemporal data.
+  description: He studies the interplay between graph deep learning and irregular spatiotemporal data.
   links:
     website: https://marshka.github.io/
     github: marshka
@@ -57,9 +57,11 @@
   surname: Butera
   group: team
   role: Ph.D. Student
-  description: Working on object detection and computer vision.
+  description: His research focuses on model adaptability and generalization for spatiotemporal data.
   links:
     website: https://usi.to/7hz
+    github: LucaButera
+    scholar: b-l-TIUAAAAJ
   img: LB.jpg
 - id: amanenti 
   name: Alessandro
@@ -87,6 +89,18 @@
     linkedin: tommasomarzi
     scholar: uYZ6I-MAAAAJ
   img: TM.jpg
+- id: vmoretti 
+  name: Valentina
+  surname: Moretti
+  group: team
+  role: Ph.D. Student
+  description: Her research focuses on time series forecasting in non-stationary environments.
+  links:
+    github: valentina-moretti
+    twitter: Vale__moretti
+    linkedin: valentina-moretti-
+    # scholar: 
+  img: VM.jpg
 - id: simoscopi 
   name: Stefano
   surname: Imoscopi
