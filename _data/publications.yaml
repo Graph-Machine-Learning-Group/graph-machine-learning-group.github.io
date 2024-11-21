@@ -25,9 +25,10 @@
       archiveprefix = {arxiv}
     }
 - title: 'Temporal Graph ODEs for Irregularly-Sampled Time Series'
-  links:
-    paper: https://arxiv.org/abs/2404.19508
+  links: 
+    paper: https://doi.org/10.24963/ijcai.2024/445
     code: https://github.com/gravins/TG-ODE
+    doi: https://doi.org/10.24963/ijcai.2024/445
   venue: International Joint Conferences on Artificial Intelligence
   year: 2024
   authors:
@@ -46,7 +47,9 @@
       booktitle = {Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence, {IJCAI-24}},
       publisher = {International Joint Conferences on Artificial Intelligence Organization},
       author = {Gravina, Alessio and Zambon, Daniele and Bacciu, Davide and Alippi, Cesare},
-      year = {2024}
+      year = {2024},
+      doi = {10.24963/ijcai.2024/445},
+      url = {https://doi.org/10.24963/ijcai.2024/445},
     }
 - title: 'Graph-based Virtual Sensing from Sparse and Partial Multivariate Observations'
   links:
@@ -132,6 +135,8 @@
 - title: "A Survey on Graph Neural Networks for Time Series: Forecasting, Classification, Imputation, and Anomaly Detection"
   links:
     paper: https://arxiv.org/abs/2307.03759
+    doi: https://doi.org/10.1109/TPAMI.2024.3443141
+    code: https://github.com/KimMeen/Awesome-GNN4TS
   venue: IEEE Transactions on Pattern Analysis and Machine Intelligence
   year: 2024
   authors:
@@ -156,6 +161,9 @@
       journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
       title={A Survey on Graph Neural Networks for Time Series: Forecasting, Classification, Imputation, and Anomaly Detection}, 
       year={2024},
+      volume={46},
+      number={12},
+      pages={10466-10485},
       doi={10.1109/TPAMI.2024.3443141}
     }
 - title: Graph-based Time Series Clustering for End-to-End Hierarchical Forecasting
