@@ -14,11 +14,14 @@ image: tutorials/graph-based-processing/img/thumb.jpg?v=2
             <div class="col-lg-8">
                 <p>
                     Successful applications of <strong>deep learning</strong> in <strong>time series</strong> processing
-                    often involve training a single neural network on a collection of (related) time series. 
-                    Pairwise relationships among time series can be modeled by considering a (possibly dynamic) graph spanning the collection. In this context, <strong>graph-based
-                        methods</strong> take the standard deep learning approach to time series processing a step forward. 
-                    The recent theoretical and practical developments in graph machine learning make adopting such an approach particularly appealing and timely. 
-    
+                    often involve training a single neural network on a collection of (related) time series.
+                    Pairwise relationships among time series can be modeled by considering a (possibly dynamic) graph
+                    spanning the collection. In this context, <strong>graph-based
+                        methods</strong> take the standard deep learning approach to time series processing a step
+                    forward.
+                    The recent theoretical and practical developments in graph machine learning make adopting such an
+                    approach particularly appealing and timely.
+
                     <!-- Successful applications of <strong>deep learning</strong> in <strong>time series</strong> processing
                     often involve training a single neural network on a collection of (related) time series. In the case
                     of <strong>spatially correlated</strong> time series, pairwise relationships can be modeled by
@@ -33,47 +36,58 @@ image: tutorials/graph-based-processing/img/thumb.jpg?v=2
 
                     The twofold <strong>objective</strong> of this tutorial is to:
                 <ol>
-                    <li>offer a <strong>comprehensive overview</strong> of the field, with a focus on forecasting applications;
+                    <li>offer a <strong>comprehensive overview</strong> of the field, with a focus on forecasting
+                        applications;
                     </li>
-                    <li>provide <strong>tools and guidelines</strong> to design and evaluate graph-based models for time series.
+                    <li>provide <strong>tools and guidelines</strong> to design and evaluate graph-based models for time
+                        series.
                     </li>
                 </ol>
-                This tutorial is meant for early-carrer researchers and practitioners who wish to apply graph deep learning methods to their time series processing applications. 
-                At the same time, the tutorial provides experienced scholars with a coherent framing of the state of the art and new perspectives.
+                This tutorial is meant for early-carrer researchers and practitioners who wish to apply graph deep
+                learning methods to their time series processing applications.
+                At the same time, the tutorial provides experienced scholars with a coherent framing of the state of the
+                art and new perspectives.
                 </p>
             </div>
             <div class="col-lg-8 text-center">
                 <h1>Material</h1>
                 <p>Download the slides used in our tutorial.</p>
-                <a class="btn btn-primary" href="#" role="button">Download slides (Conf.)</a>
-                <a class="btn btn-primary" href="#" role="button">Download slides (Meetup)</a>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6">
+                        <a class="w-75 btn btn-primary" href="#" role="button">Download slides (Conf.)</a>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="w-75 btn btn-primary" href="#" role="button">Download slides (Meetup)</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 </section>
 <!-- Location section-->
-<section class="text-white" style="background-image: url(./img/siena-background.jpg); background-attachment: fixed; background-size: cover;">
-    <div class="container px-4">
-        <div class="row gx-4 justify-content-center">
-            <div class="col-lg-8">
-                <p class="lead">This tutorial will be delivered at the <strong
-                        class="text-decoration-underline">Learning on Graphs (LoG) Conference</strong>,
-                    held online <strong>from the 26th to the 29th of November 2024</strong>, and at the 
-                    <strong class="text-decoration-underline">Italy Meetup</strong>, in Siena, Italy, 
-                    <strong>from the 4th to the 6th of December 2024</strong>.<br>The tutorial will
-                    take place on 
-                    <strong class="text-decoration-underline">Thursday, 28th of November</strong>, 17:00-20:00 (London, UTC+1), and 
-                    <strong class="text-decoration-underline">Friday, 6th of December</strong>, 10:30-12:00 (Rome, UTC+2).
-                </p>
-                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center"
-                    style="gap: 1.5em">
-                    <a class="btn btn-outline-light" href="https://logconference.org/" role="button"
-                        target="_blank">Conference website</a>
-                    <div>
-                        <img src="./img/log-logo.png" height="182px" class="me-2" />
+<section class="text-white py-0"
+    style="background-image: url(./img/siena-background.jpg); background-attachment: fixed; background-size: cover;">
+    <div class="w-100 h-100 py-5" style="backdrop-filter: brightness(0.5) blur(3px);">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <p class="lead">
+                        This tutorial will be delivered at the <strong class="text-decoration-underline">Learning on
+                            Graphs (LoG) Conference</strong>, held online <strong>from the 26th to the 29th of November
+                            2024</strong>, and at the <strong class="text-decoration-underline">Italy Meetup</strong>,
+                        in Siena, Italy, <strong>from the 4th to the 6th of December 2024</strong>.
+                    </p>
+                    <p class="lead">The tutorial will take place on <a class="fw-normal text-white text-decoration-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=[LoG 2024] Graph Deep Learning for Time Series Processing (Tutorial)&dates=20241128T170000Z/20241128T200000Z&details=Tutorial website: https://gmlg.ch/tutorials/graph-based-processing/log-2024&location=https://logconference.org/">Thursday, 28th of November</a>, 17:00-20:00 (London, UTC), and <a class="fw-normal text-white text-decoration-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=[LoG 2024 - Italy Meetup] Graph Deep Learning for Time Series Processing (Tutorial)&dates=20241206T093000Z/20241206T110000Z&details=Tutorial website: https://gmlg.ch/tutorials/graph-based-processing/log-2024&location=Via Roma, 56, 53100 Siena SI, Italia">Friday, 6th of December</a>, 10:30-12:00 (Rome, UTC+1).
+                    </p>
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+                        style="gap: 1.5em">
+                        <a class="btn btn-outline-light" href="https://logconference.org/" role="button"
+                            target="_blank">Conference website</a>
+                        <div>
+                            <img src="./img/log-logo.png" height="182px" class="me-2" />
+                        </div>
+                        <a class="btn btn-outline-light" href="https://sites.google.com/student.unisi.it/log24siena"
+                            role="button" target="_blank">Meetup website</a>
                     </div>
-                    <a class="btn btn-outline-light" href="https://sites.google.com/student.unisi.it/log24siena" role="button"
-                        target="_blank">Meetup website</a>
                 </div>
             </div>
         </div>
@@ -85,39 +99,49 @@ image: tutorials/graph-based-processing/img/thumb.jpg?v=2
         <div class="row gx-4 justify-content-center">
             <div class="col-lg-8">
                 <h1 class="text-center">Program</h1>
-                <h5 class="mt-3 mb-2 fw-light"><span class="fw-bold me-2">Part 1</span> Graph deep learning for time series processing.</h5>
+                <h5 class="mt-3 mb-2 fw-light"><span class="fw-bold me-2">Part 1</span> Graph deep learning for time
+                    series processing.</h5>
                 <ol>
                     <li><strong>Correlated time series</strong><br>
                         Definition of the problem settings. Time series forecasting.
                     </li>
                     <li><strong>Graph deep learning for time series forecasting</strong><br>
-                        Graph-based framework for representing correlated time series. Graph-based models for time series forecasting.
-                        Similarities to and differences from related settings in time series analysis and temporal graph learning.
+                        Graph-based framework for representing correlated time series. Graph-based models for time
+                        series forecasting.
+                        Similarities to and differences from related settings in time series analysis and temporal graph
+                        learning.
                     </li>
                     <li><strong>Spatiotemporal graph neural networks (STGNNs)</strong><br>
-                        Core components of a STGNN model. Recipes and strategies for building STGNNs. The time-then-space and time-and-space paradigms.
+                        Core components of a STGNN model. Recipes and strategies for building STGNNs. The
+                        time-then-space and time-and-space paradigms.
                         Overview of architectures from the literature.
                     </li>
                     <li><strong>Global and local models</strong><br>
-                        Parameter sharing in time series models. Review of the global and local modeling paradigms with their strengths. 
-                        Practical implications in graph-based time series processing. Hybrid global-local STGNN architectures. Transfer learning.
+                        Parameter sharing in time series models. Review of the global and local modeling paradigms with
+                        their strengths.
+                        Practical implications in graph-based time series processing. Hybrid global-local STGNN
+                        architectures. Transfer learning.
                     </li>
                 </ol>
                 <h5 class="mt-3 mb-2 fw-light"><span class="fw-bold me-2">Demo</span> Coding Spatiotemporal GNNs</h5>
-                <p>Overview of open-source Pytorch libraries for graph-based time series processing. Torch Spatiotemporal demo.</p>
+                <p>Overview of open-source Pytorch libraries for graph-based time series processing. Torch
+                    Spatiotemporal demo.</p>
                 <h5 class="mt-3 mb-2 fw-light"><span class="fw-bold me-2">Part 2</span> Challenges and tools.</h5>
                 <ol>
                     <li><strong>Latent graph learning</strong><br>
-                        Methods to apply the framework when no pre-defined graph is available. Learning graph structures from collections of time series.
+                        Methods to apply the framework when no pre-defined graph is available. Learning graph structures
+                        from collections of time series.
                     </li>
                     <li><strong>Scalability</strong><br>
                         Methods to enable scalability to large sensor networks.
                     </li>
                     <li><strong>Dealing with missing data</strong><br>
-                        The problem of missing data. Overview of methods for graph-based multivariate time series imputation and kriging.
+                        The problem of missing data. Overview of methods for graph-based multivariate time series
+                        imputation and kriging.
                     </li>
                     <li><strong>Model quality assessment</strong><br>
-                        Statistical tools to test the optimality of graph-based predictors. Identification of time-space regions where predictions can be improved.
+                        Statistical tools to test the optimality of graph-based predictors. Identification of time-space
+                        regions where predictions can be improved.
                     </li>
                 </ol>
             </div>
