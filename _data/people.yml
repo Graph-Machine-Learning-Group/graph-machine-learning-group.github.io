@@ -43,7 +43,7 @@
   name: Ivan
   surname: Marisca
   group: team
-  role: Ph.D. Student
+  role: Ph.D. Candidate
   description: He studies the interplay between graph deep learning and irregular spatiotemporal data.
   links:
     website: https://marshka.github.io/
@@ -101,6 +101,17 @@
     linkedin: valentina-moretti-
     # scholar: 
   img: VM.jpg
+- id: mnogales 
+  name: Miguel
+  surname: Nogales
+  group: team
+  role: Ph.D. Student
+  description: He studies model generalization for spatiotemporal data processing in graphs.
+  links:
+    github: Xigm
+    linkedin: miguel-nogales
+    scholar: fswn8KQAAAAJ
+  img: MN.jpg
 - id: simoscopi 
   name: Stefano
   surname: Imoscopi
