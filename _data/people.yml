@@ -112,26 +112,6 @@
     linkedin: miguel-nogales
     scholar: fswn8KQAAAAJ
   img: MN.jpg
-- id: simoscopi 
-  name: Stefano
-  surname: Imoscopi
-  group: team
-  role: Research Collaborator
-  description: He works on applied research projects. His focus is on time series forecasting for the energy industry.
-  links:
-    github: steve3nto
-    linkedin: stefanoimoscopi
-    scholar: gZbmdcsAAAAJ&hl
-  img: SI.jpg
-- id: fbombardieri 
-  name: Federico
-  surname: Bombardieri
-  group: team
-  role: Research Collaborator
-  description: His research focuses on machine learning for hydrology.
-  links:
-    linkedin: federicobombardieri
-  img: FB.jpg
 # AFFILIATE
 - id: slukovic
   name: Slobodan
@@ -155,16 +135,6 @@
     scholar: nxoghS8AAAAJ
   img: AF.jpg
 # EXTERNAL
-- id: llivi
-  name: Lorenzo
-  surname: Livi
-  group: external
-  role: Assistant professor at the University of Manitoba, Winnipeg (Canada)
-  description: His research interests lie at the intersection of machine learning and complex dynamical systems, with particular emphasis on graph-based methods.
-  links:
-    website: https://sites.google.com/site/lorenzlivi/home
-    scholar: hAL9amAAAAAJ
-  img: LL.jpg
 - id: fmbianchi
   name: Filippo Maria
   surname: Bianchi
@@ -178,6 +148,33 @@
     scholar: yb7cT1MAAAAJ
   img: FMB.jpg
 # ALUMNI
+- id: fbombardieri
+  name: Federico
+  surname: Bombardieri
+  group: alumni
+  period: 2023-2024
+  now: Data scientist at <a href="https://graphsight.ai" target="_blank">Graphsight</a>
+  description: Previously research collaborator on the <a href="https://swain-project.eu/" target="_blank">SWAIN</a> project.
+  links:
+    website: https://www.linkedin.com/in/federicobombardieri
+- id: simoscopi 
+  name: Stefano
+  surname: Imoscopi
+  group: alumni
+  period: 2021-2024
+  now: Tech lead at <a href="https://graphsight.ai" target="_blank">Graphsight</a>
+  description: Previously research collaborator on industrial projects.
+  links:
+    website:  https://www.linkedin.com/in/stefanoimoscopi
+- id: llivi
+  name: Lorenzo
+  surname: Livi
+  group: alumni
+  period: 2016-2023
+  now: Academic Director at the Open Institute of Technology
+  description: Previously associate professor at the University of Manitoba, Winnipeg (Canada).
+  links:
+    website: https://sites.google.com/site/lorenzlivi/home
 - id: pverzelli
   name: Pietro
   surname: Verzelli
