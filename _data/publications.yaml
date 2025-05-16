@@ -29,8 +29,8 @@
 - title: 'Learning Latent Graph Structures and their Uncertainty'
   links:
     paper: https://arxiv.org/abs/2405.19933
-  venue: preprint
-  year: 2024
+  venue: To appear in International Conference on Machine Learning
+  year: 2025
   authors:
   - id:amanenti
   - id:dzambon
@@ -41,15 +41,11 @@
     - model calibration
   abstract: Within a prediction task, Graph Neural Networks (GNNs) use relational information as an inductive bias to enhance the model's accuracy. As task-relevant relations might be unknown, graph structure learning approaches have been proposed to learn them while solving the downstream prediction task. In this paper, we demonstrate that minimization of a point-prediction loss function, e.g., the mean absolute error, does not guarantee proper learning of the latent relational information and its associated uncertainty. Conversely, we prove that a suitable loss function on the stochastic model outputs simultaneously grants (i) the unknown adjacency matrix latent distribution and (ii) optimal performance on the prediction task. Finally, we propose a sampling-based method that solves this joint learning task. Empirical results validate our theoretical claims and demonstrate the effectiveness of the proposed approach.
   bibtex: >
-    @misc{manenti2024learning,
+    @inproceedings{manenti2025learning,
       title = {Learning {{Latent Graph Structures}} and Their {{Uncertainty}}},
       author = {Manenti, Alessandro and Zambon, Daniele and Alippi, Cesare},
-      year = {2024},
-      month = may,
-      number = {arXiv:2405.19933},
-      primaryclass = {cs, stat},
-      publisher = {arXiv},
-      archiveprefix = {arxiv}
+      year = {2025},
+      booktitle={To appear in Proceedings of the Forty-Second International Conference on Machine Learning (ICML)}, 
     }
 - title: 'Temporal Graph ODEs for Irregularly-Sampled Time Series'
   links: 
@@ -120,8 +116,8 @@
 - title: Graph Deep Learning for Time Series Forecasting
   links:
     paper: https://arxiv.org/abs/2310.15978
-  venue: Preprint
-  year: 2023
+  venue: To appear in ACM Computing Surveys
+  year: 2025
   authors:
   - id:acini
   - id:imarisca
@@ -131,6 +127,13 @@
     - spatiotemporal graphs
     - forecasting
   abstract: Graph-based deep learning methods have become popular tools to process collections of correlated time series. Differently from traditional multivariate forecasting methods, neural graph-based predictors take advantage of pairwise relationships by conditioning forecasts on a (possibly dynamic) graph spanning the time series collection. The conditioning can take the form of an architectural inductive bias on the neural forecasting architecture, resulting in a family of deep learning models called spatiotemporal graph neural networks. Such relational inductive biases enable the training of global forecasting models on large time-series collections, while at the same time localizing predictions w.r.t. each element in the set (i.e., graph nodes) by accounting for local correlations among them (i.e., graph edges). Indeed, recent theoretical and practical advances in graph neural networks and deep learning for time series forecasting make the adoption of such processing frameworks appealing and timely. However, most of the studies in the literature focus on proposing variations of existing neural architectures by taking advantage of modern deep learning practices, while foundational and methodological aspects have not been subject to systematic investigation. To fill the gap, this paper aims to introduce a comprehensive methodological framework that formalizes the forecasting problem and provides design principles for graph-based predictive models and methods to assess their performance. At the same time, together with an overview of the field, we provide design guidelines, recommendations, and best practices, as well as an in-depth discussion of open challenges and future research directions.
+  bibtex: >
+    @article{cini2025graph,
+      title = {Graph {{Deep Learning}} for {{Time Series Forecasting}}},
+      author = {Cini, Andrea and Marisca, Ivan and Zambon, Daniele and Alippi, Cesare},
+      year = {2025},
+      journal={To appear in ACM Computing Surveys}, 
+    }
 - title: Graph Representation Learning (special session at ESANN 2023)
   links:
     paper: https://doi.org/10.14428/esann/2023.ES2023-4
