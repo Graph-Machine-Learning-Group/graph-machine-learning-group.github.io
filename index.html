@@ -74,8 +74,10 @@ layout: default
             <div class="col-lg-8">
                 <h2>Open Source</h2>
                 <p class="lead">Our group is active in open source software development and we maintain several Python libraries based on our research. Check out also the <a href="https://github.com/Graph-Machine-Learning-Group">group GitHub page</a> for code related to our papers.</p>
+                <h3>Software</h3>
                 <div class="card-series">
-                    {% for os_project in site.data.open_source %}
+                    {% assign software = site.data.open_source | where: "type", "software" %}
+                    {% for os_project in software %}
                     <div class="card horizontal-card">
                         <div class="horizontal-card-image">
                             <img src="{{site.url}}/assets/img/open_source/{{os_project.img}}" alt="" />
@@ -90,7 +92,28 @@ layout: default
                     </div>
                     {% endfor %}
                 </div>
-                <p class="text-muted">The development of Spektral and CDG was supported by project ALPSFORT (200021 172671) of the Swiss National Science Foundation.</p>
+                <h3>Datasets</h3>
+                <div class="card-series">
+                    {% assign datasets = site.data.open_source | where: "type", "dataset" %}
+                    {% for os_project in datasets %}
+                    <div class="card horizontal-card">
+                        {% if os_project.img %}
+                            <div class="horizontal-card-image">
+                                <img src="{{site.url}}/assets/img/open_source/{{os_project.img}}" alt="" />
+                            </div>
+                            <div class="horizontal-card-content">
+                        {% else %}
+                            <div class="horizontal-card-content" style="width: 90%;">
+                        {% endif %}
+                            <h5 class="horizontal-card-title"><b>{{os_project.name}}</b></h5>
+                            <p>{{os_project.description}}</p>
+                            <div class="horizontal-card-action">
+                                {% include links_list.html links=os_project.links%}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>

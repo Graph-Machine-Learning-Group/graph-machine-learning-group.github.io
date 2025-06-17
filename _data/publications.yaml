@@ -1,4 +1,36 @@
 ---
+- title: 'PeakWeather: MeteoSwiss Weather Station Measurements for Spatiotemporal Deep Learning'
+  links:
+    paper: https://arxiv.org/abs/2506.13652
+    dataset: https://huggingface.co/datasets/MeteoSwiss/PeakWeather
+    code: https://github.com/Graph-Machine-Learning-Group/peakweather-wind-forecasting
+  venue: Preprint
+  year: 2025
+  authors:
+  - id:dzambon
+  - M. Cattaneo
+  - id:imarisca
+  - J. Bhend
+  - D. Nerini
+  - id:calippi
+  first_authors: 2
+  keywords:
+    - spatiotemporal data
+    - graph structure learning
+    - graph neural networks
+    - benchmark
+    - weather forecasting
+  abstract: 'Accurate weather forecasts are essential for supporting a wide range of activities and decision-making processes, as well as mitigating the impacts of adverse weather events. While traditional numerical weather prediction (NWP) remains the cornerstone of operational forecasting, machine learning is emerging as a powerful alternative for fast, flexible, and scalable predictions. We introduce PeakWeather, a high-quality dataset of surface weather observations collected every 10 minutes over more than 8 years from the ground stations of the Federal Office of Meteorology and Climatology MeteoSwiss''s measurement network. The dataset includes a diverse set of meteorological variables from 302 station locations distributed across Switzerland''s complex topography and is complemented with topographical indices derived from digital height models for context. Ensemble forecasts from the currently operational high-resolution NWP model are provided as a baseline forecast against which to evaluate new approaches. The dataset''s richness supports a broad spectrum of spatiotemporal tasks, including time series forecasting at various scales, graph structure learning, imputation, and virtual sensing. As such, PeakWeather serves as a real-world benchmark to advance both foundational machine learning research, meteorology, and sensor-based applications.'
+  bibtex: >
+    @misc{zambon2025peakweather,
+      title={PeakWeather: MeteoSwiss Weather Station Measurements for Spatiotemporal Deep Learning}, 
+      author={Zambon, Daniele and Cattaneo, Michele and Marisca, Ivan and Bhend, Jonas and Nerini, Daniele and Alippi, Cesare},
+      year={2025},
+      eprint={2506.13652},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2506.13652}, 
+    }
 - title: 'On the Regularization of Learnable Embeddings for Time Series Forecasting'
   links:
     paper: https://arxiv.org/abs/2410.14630
@@ -28,6 +60,7 @@
 - title: 'Learning Latent Graph Structures and their Uncertainty'
   links:
     paper: https://arxiv.org/abs/2405.19933
+    github: https://github.com/allemanenti/Learning-Calibrated-Structures
   venue: To appear in International Conference on Machine Learning
   year: 2025
   authors:

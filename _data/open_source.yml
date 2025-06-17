@@ -1,21 +1,37 @@
+- name: PeakWeather
+  type: dataset
+  description: A high-resolution dataset of Swiss weather station measurements over 8+ years designed for spatiotemporal deep learning.
+  links:
+    website: https://huggingface.co/datasets/MeteoSwiss/PeakWeather
+    github: https://github.com/MeteoSwiss/PeakWeather
+- name: EngRad
+  type: dataset
+  description: A dataset of 5 different weather variables collected at 487 grid points in England from 2018 to 2020.
+  links:
+    website: https://zenodo.org/records/12760772
+    github: https://github.com/marshka/hdtts
 - name: Torch Spatiotemporal
+  type: software
   description: A library for neural spatiotemporal data processing, with a focus on Graph Neural Networks.
   img: tsl_logo.svg
   links:
     website: https://torch-spatiotemporal.readthedocs.io/
     github: TorchSpatiotemporal/tsl
 - name: Spektral
+  type: software
   description: A library for building graph neural networks in Keras and Tensorflow.
   img: spektral_logo.svg
   links:
     website: https://graphneural.network/
     github: danielegrattarola/spektral/
 - name: CDG
+  type: software
   description: A Python library for detecting changes in stationarity in sequences of graphs.
   img: cdg_logo.svg
   links:
     github: dzambon/cdg
 - name: DTS
+  type: software
   description: A Keras library that provides multiple deep architectures for multi-step time-series forecasting.
   img: dts_logo.svg
   links:
