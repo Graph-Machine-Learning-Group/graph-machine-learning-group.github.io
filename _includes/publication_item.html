@@ -34,6 +34,9 @@
         <a class="text-primary" href="https://arxiv.org/abs/{{publication.arxiv_id}}" target="_blank">arXiv</a>
         {% endif %}
         {% endif %}
+        {% if publication.links.dataset %}
+        <a class="text-primary" href="{{publication.links.dataset}}" target="_blank">Dataset</a>
+        {% endif %}
         {% if publication.links.code %}
         <a class="text-primary" href="{{publication.links.code}}" target="_blank">Code</a>
         {% endif %}
