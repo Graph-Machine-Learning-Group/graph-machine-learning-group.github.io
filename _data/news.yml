@@ -1,5 +1,12 @@
 - date: 2025/06
-  text: In collaboration with <strong>MeteoSwiss</strong>, we have released <a href="https://arxiv.org/abs/2506.13652"><strong>PeakWeather</strong></a> - a high-resolution benchmark <strong>dataset</strong> for spatiotemporal weather modeling from ground measuments. Check it out on <a href="https://huggingface.co/datasets/MeteoSwiss/PeakWeather">Hugging Face</a>!
+  text: >
+    Two new preprints about our latest research!
+    <a href="https://arxiv.org/abs/2506.13652">PeakWeather: MeteoSwiss Weather Station Measurements for Spatiotemporal Deep Learning</a> (Zambon et al.) and
+    <a href="https://arxiv.org/abs/2506.15507">Over-squashing in Spatiotemporal Graph Neural Networks</a> (Marisca et al.).
+    Check them out!
+- date: 2025/06
+  text: >
+    In collaboration with <strong>MeteoSwiss</strong>, we have released <a href="https://arxiv.org/abs/2506.13652"><strong>PeakWeather</strong></a> - a high-resolution benchmark <strong>dataset</strong> for spatiotemporal weather modeling from ground measuments. Check it out on <a href="https://huggingface.co/datasets/MeteoSwiss/PeakWeather">Hugging Face</a>!
 - date: 2025/06
   text: 'Our paper <a href="https://doi.org/10.1145/3742784">Graph Deep Learning for Time Series Forecasting (Cini et al.)</a> has been accepted to <strong><a href="https://dl.acm.org/journal/csur">ACM Computing Surveys</a></strong>!'
 - date: 2025/05

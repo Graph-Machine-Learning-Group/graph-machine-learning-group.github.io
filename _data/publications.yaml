@@ -1,4 +1,29 @@
 ---
+- title: "Over-squashing in Spatiotemporal Graph Neural Networks"
+  links:
+    paper: https://arxiv.org/abs/2506.15507
+  venue: Preprint
+  year: 2025
+  authors:
+  - id:imarisca
+  - J. Bamberger
+  - id:calippi
+  - M. Bronstein
+  keywords:
+    - spatiotemporal data
+    - graph neural networks
+    - forecasting
+    - over-squashing
+  abstract: >
+    Graph Neural Networks (GNNs) have achieved remarkable success across various domains. However, recent theoretical advances have identified fundamental limitations in their information propagation capabilities, such as over-squashing, where distant nodes fail to effectively exchange information. While extensively studied in static contexts, this issue remains unexplored in Spatiotemporal GNNs (STGNNs), which process sequences associated with graph nodes. Nonetheless, the temporal dimension amplifies this challenge by increasing the information that must be propagated. In this work, we formalize the spatiotemporal over-squashing problem and demonstrate its distinct characteristics compared to the static case. Our analysis reveals that counterintuitively, convolutional STGNNs favor information propagation from points temporally distant rather than close in time. Moreover, we prove that architectures that follow either time-and-space or time-then-space processing paradigms are equally affected by this phenomenon, providing theoretical justification for computationally efficient implementations. We validate our findings on synthetic and real-world datasets, providing deeper insights into their operational dynamics and principled guidance for more effective designs.
+  bibtex: >
+    @article{marisca2025oversquashing,
+      title     = {Over-squashing in Spatiotemporal Graph Neural Networks},
+      author    = {Ivan Marisca and Jacob Bamberger and Cesare Alippi and Michael M. Bronstein},
+      year      = {2025},
+      journal   = {arXiv preprint arXiv:2506.15507},
+      url       = {https://arxiv.org/abs/2506.15507},
+    }
 - title: 'PeakWeather: MeteoSwiss Weather Station Measurements for Spatiotemporal Deep Learning'
   links:
     paper: https://arxiv.org/abs/2506.13652
@@ -92,7 +117,7 @@
   - D. Bacciu
   - id:calippi
   keywords:
-    - spatiotemporal graphs
+    - spatiotemporal data
     - graph neural networks
     - irregular sampling
   abstract: Modern graph representation learning works mostly under the assumption of dealing with regularly sampled temporal graph snapshots, which is far from realistic, e.g., social networks and physical systems are characterized by continuous dynamics and sporadic observations. To address this limitation, we introduce the Temporal Graph Ordinary Differential Equation (TG-ODE) framework, which learns both the temporal and spatial dynamics from graph streams where the intervals between observations are not regularly spaced. We empirically validate the proposed approach on several graph benchmarks, showing that TG-ODE can achieve state-of-the-art performance in irregular graph stream tasks.
@@ -119,7 +144,7 @@
   - V. V. Gusev
   - id:calippi
   keywords:
-    - spatiotemporal graphs
+    - spatiotemporal data
     - graph neural networks
     - imputation
     - graph structure learning
@@ -142,8 +167,10 @@
   - id:calippi
   - id:fmbianchi
   keywords:
-    - spatiotemporal graphs
+    - spatiotemporal data
     - forecasting
+    - pooling
+    - irregular sampling
   abstract: Given a set of synchronous time series, each associated with a sensor-point in space and characterized by inter-series relationships, the problem of spatiotemporal forecasting consists of predicting future observations for each point. Spatiotemporal graph neural networks achieve striking results by representing the relationships across time series as a graph. Nonetheless, most existing methods rely on the often unrealistic assumption that inputs are always available and fail to capture hidden spatiotemporal dynamics when part of the data is missing. In this work, we tackle this problem through hierarchical spatiotemporal downsampling. The input time series are progressively coarsened over time and space, obtaining a pool of representations that capture heterogeneous temporal and spatial dynamics. Conditioned on observations and missing data patterns, such representations are combined by an interpretable attention mechanism to generate the forecasts. Our approach outperforms state-of-the-art methods on synthetic and real-world benchmarks under different missing data distributions, particularly in the presence of contiguous blocks of missing values.
 - title: Graph Deep Learning for Time Series Forecasting
   links:
@@ -157,7 +184,7 @@
   - id:dzambon
   - id:calippi
   keywords:
-    - spatiotemporal graphs
+    - spatiotemporal data
     - forecasting
   abstract: Graph-based deep learning methods have become popular tools to process collections of correlated time series. Differently from traditional multivariate forecasting methods, neural graph-based predictors take advantage of pairwise relationships by conditioning forecasts on a (possibly dynamic) graph spanning the time series collection. The conditioning can take the form of an architectural inductive bias on the neural forecasting architecture, resulting in a family of deep learning models called spatiotemporal graph neural networks. Such relational inductive biases enable the training of global forecasting models on large time-series collections, while at the same time localizing predictions w.r.t. each element in the set (i.e., graph nodes) by accounting for local correlations among them (i.e., graph edges). Indeed, recent theoretical and practical advances in graph neural networks and deep learning for time series forecasting make the adoption of such processing frameworks appealing and timely. However, most of the studies in the literature focus on proposing variations of existing neural architectures by taking advantage of modern deep learning practices, while foundational and methodological aspects have not been subject to systematic investigation. To fill the gap, this paper aims to introduce a comprehensive methodological framework that formalizes the forecasting problem and provides design principles for graph-based predictive models and methods to assess their performance. At the same time, together with an overview of the field, we provide design guidelines, recommendations, and best practices, as well as an in-depth discussion of open challenges and future research directions.
   bibtex: >
@@ -216,7 +243,7 @@
   - I. King 
   - S. Pan
   keywords:
-    - spatiotemporal graphs
+    - spatiotemporal data
     - graph neural networks
     - forecasting
     - imputation
@@ -243,7 +270,7 @@
   - D. Mandic
   - id:calippi
   keywords:
-    - spatiotemporal graphs
+    - spatiotemporal data
     - forecasting
     - time series clustering
     - pooling
@@ -309,7 +336,7 @@
   - id:dzambon
   first_authors: 2
   keywords:
-    - spatiotemporal graphs
+    - spatiotemporal data
     - state-space models
     - graph structure learning
   abstract: The well-known Kalman filters model dynamical systems by relying on state-space representations with the next state updated, and its uncertainty controlled, by fresh information associated with newly observed system outputs. This paper generalizes, for the first time in the literature, Kalman and extended Kalman filters to discrete-time settings where inputs, states, and outputs are represented as attributed graphs whose topology and attributes can change with time. The setup allows us to adapt the framework to cases where the output is a vector or a scalar too (node/graph level tasks). Within the proposed theoretical framework, the unknown state-transition and the readout functions are learned end-to-end along with the downstream prediction task.
@@ -326,7 +353,7 @@
   - id:calippi
   first_authors: 2
   keywords:
-    - spatiotemporal graphs
+    - spatiotemporal data
     - forecasting
     - embeddings
   abstract: Spatiotemporal graph neural networks have shown to be effective in time series forecasting applications, achieving better performance than standard univariate predictors in several settings. These architectures take advantage of a graph structure and relational inductive biases to learn a single (global) inductive model to predict any number of the input time series, each associated with a graph node. Despite the gain achieved in computational and data efficiency w.r.t. fitting a set of local models, relying on a single global model can be a limitation whenever some of the time series are generated by a different spatiotemporal stochastic process. The main objective of this paper is to understand the interplay between globality and locality in graph-based spatiotemporal forecasting, while contextually proposing a methodological framework to rationalize the practice of including trainable node embeddings in such architectures. We ascribe to trainable node embeddings the role of amortizing the learning of specialized components. Moreover, embeddings allow for 1) effectively combining the advantages of shared message-passing layers with node-specific parameters and 2) efficiently transferring the learned model to new node sets. Supported by strong empirical evidence, we provide insights and guidelines for specializing graph-based models to the dynamics of each time series and show how this aspect plays a crucial role in obtaining accurate predictions.
@@ -349,7 +376,7 @@
   - id:dzambon
   - id:calippi
   keywords:
-    - spatiotemporal graphs
+    - spatiotemporal data
     - residual analysis
   abstract: This paper introduces a novel residual correlation analysis, called AZ-analysis, to assess the optimality of spatio-temporal predictive models. The proposed AZ-analysis constitutes a valuable asset for discovering and highlighting those space-time regions where the model can be improved with respect to performance. The AZ-analysis operates under very mild assumptions and is based on a spatio-temporal graph that encodes serial and functional dependencies in the data; asymptotically distribution-free summary statistics identify existing residual correlation in space and time regions, hence localizing time frames and/or communities of sensors, where the predictor can be improved.
 - title: "Peak shaving in distribution networks using stationary energy storage systems: A Swiss case study"
@@ -391,7 +418,7 @@
   - id:llivi
   - id:calippi
   keywords:
-    - spatiotemporal graphs
+    - spatiotemporal data
     - state-space models
     - graph structure learning
   abstract: State-space models constitute an effective modeling tool to describe multivariate time series and operate by maintaining an updated representation of the system state from which predictions are made. Within this framework, relational inductive biases, e.g., associated with functional dependencies existing among signals, are not explicitly exploited leaving unattended great opportunities for effective modeling approaches. The manuscript aims, for the first time, at filling this gap by matching state-space modeling and spatio-temporal data where the relational information, say the functional graph capturing latent dependencies, is learned directly from data and is allowed to change over time. Within a probabilistic formulation that accounts for the uncertainty in the data-generating process, an encoder-decoder architecture is proposed to learn the state-space model end-to-end on a downstream task. The proposed methodological framework generalizes several state-of-the-art methods and demonstrates to be effective in extracting meaningful relational information while achieving optimal forecasting performance in controlled environments.
@@ -408,7 +435,7 @@
   - id:calippi
   first_authors: 2
   keywords:
-    - spatiotemporal graphs
+    - spatiotemporal data
     - forecasting
     - reservoir computing
   abstract: Neural forecasting of spatiotemporal time series drives both research
@@ -475,7 +502,7 @@
   - id:calippi
   first_authors: 2
   keywords:
-    - spatiotemporal graphs
+    - spatiotemporal data
     - imputation
   abstract: Modeling multivariate time series as temporal signals over a (possibly
     dynamic) graph is an effective representational framework that allows for developing
@@ -506,7 +533,7 @@
   - id:dzambon
   - id:calippi
   keywords:
-    - spatiotemporal graphs
+    - spatiotemporal data
     - residual analysis
   abstract: We present the first whiteness test for graphs, i.e., a whiteness test
     for multivariate time series associated with the nodes of a dynamic graph. The
@@ -545,7 +572,7 @@
   - id:dzambon
   - id:calippi
   keywords:
-    - spatiotemporal graphs
+    - spatiotemporal data
     - graph structure learning
     - forecasting
   abstract: Outstanding achievements of graph neural networks for spatiotemporal time series analysis show that relational constraints introduce an effective inductive bias into neural forecasting architectures. Often, however, the relational information characterizing the underlying data-generating process is unavailable and the practitioner is left with the problem of inferring from data which relational graph to use in the subsequent processing stages. We propose novel, principled - yet practical - probabilistic score-based methods that learn the relational dependencies as distributions over graphs while maximizing end-to-end the performance at task. The proposed graph learning framework is based on consolidated variance reduction techniques for Monte Carlo score-based gradient estimation, is theoretically grounded, and, as we show, effective in practice. In this paper, we focus on the time series forecasting problem and show that, by tailoring the gradient estimators to the graph learning problem, we are able to achieve state-of-the-art performance while controlling the sparsity of the learned graph and the computational scalability. We empirically assess the effectiveness of the proposed method on synthetic and real-world benchmarks, showing that the proposed solution can be used as a stand-alone graph identification procedure as well as a graph learning component of an end-to-end forecasting architecture.
@@ -605,7 +632,7 @@
   - id:slukovic
   - id:calippi
   keywords:
-    - spatiotemporal graphs
+    - spatiotemporal data
     - forecasting
     - energy analytics
   abstract: Accurate forecasting of electricity demand is a core component in many
@@ -989,7 +1016,7 @@
   - id:calippi
   first_authors: 2
   keywords:
-    - spatiotemporal graphs
+    - spatiotemporal data
     - imputation
   abstract: Dealing with missing values and incomplete time series is a labor-intensive,
     tedious, inevitable task when handling data coming from real-world applications.
