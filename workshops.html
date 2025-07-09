@@ -1,0 +1,25 @@
+---
+layout: particles_header
+title: Workshops
+description: List of past and upcoming workshops from GMLG.
+---
+<!-- Program section-->
+<section>
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>List of Workshops</h2>
+                <ul>
+                    {% for workshop in site.data.workshops %}
+                      <li>
+                        <a class="h5" href="{{ workshop.url }}">{{ workshop.title }}</a><br>
+                        <span class="text-muted fw-light">{{ workshop.venue }} &sdot; {{ workshop.city }}</span>
+                        <!-- <i>{{ workshop.city }}</i>, {{ workshop.date }}. -->
+                      </li>
+                    {% endfor %}
+                  </ul>
+                  
+            </div>
+        </div>
+    </div>
+</section>
