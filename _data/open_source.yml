@@ -2,7 +2,7 @@
   type: dataset
   description: A high-resolution dataset of Swiss weather station measurements over 8+ years designed for spatiotemporal deep learning.
   links:
-    website: https://huggingface.co/datasets/MeteoSwiss/PeakWeather
+    website: https://peakweather.readthedocs.io/
     github: https://github.com/MeteoSwiss/PeakWeather
 - name: EngRad
   type: dataset

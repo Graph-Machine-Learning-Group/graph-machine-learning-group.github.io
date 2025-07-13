@@ -24,6 +24,8 @@ navbar:
     - title: Publications
       url: /publications.html
       # icon: 📄
+    - title: Open source
+      url: /#open-source
     - title: Activities
       pages:
         - title: Tutorials
