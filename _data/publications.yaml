@@ -1,4 +1,24 @@
 ---
+- title: "Equilibrium Policy Generalization: A Reinforcement Learning Framework for Cross-Graph Zero-Shot Generalization in Pursuit-Evasion Games"
+  venue: To appear in Advances in Neural Information Processing Systems
+  year: 2025
+  authors:
+  - R Lu
+  - P Zhang
+  - R Shi
+  - Y Zhu
+  - D Zhao 
+  - D Wang
+  - id:calippi
+  keywords:
+    - reinforcement learning
+  abstract: Decentralized Multi-Agent Reinforcement Learning (MARL) methods allow for learning scalable multi-agent policies, but suffer from partial observability and induced non-stationarity. These challenges can be addressed by introducing mechanisms that facilitate coordination and high-level planning. Specifically, coordination and temporal abstraction can be achieved through communication (e.g., message passing) and Hierarchical Reinforcement Learning (HRL) approaches to decision-making. However, optimization issues limit the applicability of hierarchical policies to multi-agent systems. As such, the combination of these approaches has not been fully explored. To fill this void, we propose a novel and effective methodology for learning multi-agent hierarchies of message-passing policies. We adopt the feudal HRL framework and rely on a hierarchical graph structure for planning and coordination among agents. Agents at lower levels in the hierarchy receive goals from the upper levels and exchange messages with neighboring agents at the same level. To learn hierarchical multi-agent policies, we design a novel reward-assignment method based on training the lower-level policies to maximize the advantage function associated with the upper levels. Results on relevant benchmarks show that our method performs favorably compared to the state of the art.
+  bibtex: >
+    @misc{lu2025equilibrium,
+    title={Equilibrium Policy Generalization: A Reinforcement Learning Framework for Cross-Graph Zero-Shot Generalization in Pursuit-Evasion Games},
+    author={Renyun Lu, Peng Zhang, Ruochan Shi, Yuanheng Zhu, Dongbin Zhao, Dong Wang, Cesare Alippi},
+    year={2025}
+    }
 - title: Hierarchical Message-Passing Policies for Multi-Agent Reinforcement Learning
   links:
     paper: https://arxiv.org/abs/2507.23604
@@ -23,7 +43,7 @@
 - title: "Over-squashing in Spatiotemporal Graph Neural Networks"
   links:
     paper: https://arxiv.org/abs/2506.15507
-  venue: Preprint
+  venue: To appear in Advances in Neural Information Processing Systems
   year: 2025
   authors:
   - id:imarisca
@@ -50,6 +70,7 @@
     paper: https://arxiv.org/abs/2506.13652
     dataset: https://huggingface.co/datasets/MeteoSwiss/PeakWeather
     code: https://github.com/Graph-Machine-Learning-Group/peakweather-wind-forecasting
+    website: https://peakweather.readthedocs.io/
   venue: Preprint
   year: 2025
   authors:
@@ -107,7 +128,7 @@
   links:
     paper: https://arxiv.org/abs/2405.19933
     github: https://github.com/allemanenti/Learning-Calibrated-Structures
-  venue: To appear in International Conference on Machine Learning
+  venue: International Conference on Machine Learning
   year: 2025
   authors:
   - id:amanenti
@@ -123,7 +144,7 @@
       title = {Learning {{Latent Graph Structures}} and Their {{Uncertainty}}},
       author = {Manenti, Alessandro and Zambon, Daniele and Alippi, Cesare},
       year = {2025},
-      booktitle={To appear in Proceedings of the Forty-Second International Conference on Machine Learning (ICML)}, 
+      booktitle={Proceedings of the Forty-Second International Conference on Machine Learning (ICML)}, 
     }
 - title: 'Temporal Graph ODEs for Irregularly-Sampled Time Series'
   links: 

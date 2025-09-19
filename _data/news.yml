@@ -1,4 +1,6 @@
 - date: 2025/06
+  text: 'Our papers <a href="https://arxiv.org/abs/2506.15507">Over-squashing in Spatiotemporal Graph Neural Networks</a> (Marisca et al.) and <a href="#">Equilibrium Policy Generalization: A Reinforcement Learning Framework for Cross-Graph Zero-Shot Generalization in Pursuit-Evasion Games</a> (Lu et al.) have been accepted at <strong><a href="https://neurips.cc">NeurIPS 2025</a></strong>!'
+- date: 2025/06
   text: >
     Two new preprints about our latest research!
     <a href="https://arxiv.org/abs/2506.13652">PeakWeather: MeteoSwiss Weather Station Measurements for Spatiotemporal Deep Learning</a> (Zambon et al.) and
