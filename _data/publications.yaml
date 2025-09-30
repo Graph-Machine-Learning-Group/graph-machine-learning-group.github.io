@@ -1,4 +1,23 @@
 ---
+- title: "Beyond Softmax: A Natural Parameterization for Categorical Random Variables"
+  venue: Preprint
+  year: 2025
+  authors:
+  - id:amanenti
+  - id:calippi
+  keywords:
+    - probabilistic modeling
+    - gradient-based optimization
+    - graph structure learning
+    - latent random variables
+  abstract: Latent categorical variables are frequently found in deep learning architectures. They can model actions in discrete reinforcement-learning environments, represent  categories in latent-variable models, or express relations in graph neural networks. Despite their widespread use, their discrete nature poses significant challenges to gradient-descent learning algorithms. While a substantial body of work has offered improved gradient estimation techniques, we take a complementary approach. Specifically, we: 1) revisit the ubiquitous softmax function and demonstrate its limitations from an information-geometric perspective; 2) replace the softmax with the catnat function, a function composed by a sequence of hierarchical binary splits; we prove that this choice offers significant advantages to gradient descent due to the resulting diagonal Fisher Information Matrix. A rich set of experiments — including graph structure learning, variational autoencoders, and reinforcement learning — empirically show that the proposed function improves the learning efficiency and yields models characterized by consistently higher test performance. Catnat is simple to implement and seamlessly integrates into existing codebases. Moreover, it remains compatible with standard training stabilization techniques and, as such, offers a better alternative to the softmax function.
+  bibtex: >
+    @article{manenti2025beyond,
+      title={Beyond Softmax: A Natural Parameterization for Categorical Random Variables}, 
+      author={Alessandro Manenti and Cesare Alippi},
+      journal={arXiv preprint arXiv:2509.24728},
+      year={2025},
+    }
 - title: "Equilibrium Policy Generalization: A Reinforcement Learning Framework for Cross-Graph Zero-Shot Generalization in Pursuit-Evasion Games"
   venue: To appear in Advances in Neural Information Processing Systems
   year: 2025
@@ -138,6 +157,7 @@
     - graph structure learning
     - graph neural networks
     - model calibration
+    - probabilistic modeling
   abstract: Within a prediction task, Graph Neural Networks (GNNs) use relational information as an inductive bias to enhance the model's accuracy. As task-relevant relations might be unknown, graph structure learning approaches have been proposed to learn them while solving the downstream prediction task. In this paper, we demonstrate that minimization of a point-prediction loss function, e.g., the mean absolute error, does not guarantee proper learning of the latent relational information and its associated uncertainty. Conversely, we prove that a suitable loss function on the stochastic model outputs simultaneously grants (i) the unknown adjacency matrix latent distribution and (ii) optimal performance on the prediction task. Finally, we propose a sampling-based method that solves this joint learning task. Empirical results validate our theoretical claims and demonstrate the effectiveness of the proposed approach.
   bibtex: >
     @inproceedings{manenti2025learning,
