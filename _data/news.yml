@@ -1,4 +1,9 @@
-- date: 2025/06
+- date: 2025/10
+  text: >
+    A new preprint about our latest research!
+    <a href="https://arxiv.org/abs/2509.24728">Beyond Softmax: A Natural Parameterization for Categorical Random Variables</a> (Manenti and Alippi)
+    Check it out!
+- date: 2025/09
   text: 'Our papers <a href="https://arxiv.org/abs/2506.15507">Over-squashing in Spatiotemporal Graph Neural Networks</a> (Marisca et al.) and <a href="#">Equilibrium Policy Generalization: A Reinforcement Learning Framework for Cross-Graph Zero-Shot Generalization in Pursuit-Evasion Games</a> (Lu et al.) have been accepted at <strong><a href="https://neurips.cc">NeurIPS 2025</a></strong>!'
 - date: 2025/06
   text: >
@@ -9,7 +14,7 @@
 - date: 2025/06
   text: >
     In collaboration with <strong>MeteoSwiss</strong>, we have released <a href="https://arxiv.org/abs/2506.13652"><strong>PeakWeather</strong></a> - a high-resolution benchmark <strong>dataset</strong> for spatiotemporal weather modeling from ground measuments. Check it out on <a href="https://huggingface.co/datasets/MeteoSwiss/PeakWeather">Hugging Face</a>!
-- date: 2025/06
+- date: 2025/05
   text: 'Our paper <a href="https://doi.org/10.1145/3742784">Graph Deep Learning for Time Series Forecasting (Cini et al.)</a> has been accepted to <strong><a href="https://dl.acm.org/journal/csur">ACM Computing Surveys</a></strong>!'
 - date: 2025/05
   text: 'Our papers <a href="https://arxiv.org/abs/2405.19933">Learning Latent Graph Structures and their Uncertainty (Manenti et al.)</a> and <a href="http://arxiv.org/abs/2502.09443">Relational Conformal Prediction for Correlated Time Series (Cini et al.)</a> have been accepted at <strong><a href="https://icml.cc/Conferences/2025">ICML 2025</a></strong>!'
