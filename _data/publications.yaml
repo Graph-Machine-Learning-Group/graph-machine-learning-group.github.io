@@ -16,7 +16,7 @@
       title={Beyond Softmax: A Natural Parameterization for Categorical Random Variables}, 
       author={Alessandro Manenti and Cesare Alippi},
       journal={arXiv preprint arXiv:2509.24728},
-      year={2025},
+      year={2025}
     }
 - title: "Equilibrium Policy Generalization: A Reinforcement Learning Framework for Cross-Graph Zero-Shot Generalization in Pursuit-Evasion Games"
   venue: To appear in Advances in Neural Information Processing Systems
