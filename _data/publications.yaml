@@ -1,4 +1,48 @@
 ---
+- title: "The Unreasonable Effectiveness of Randomized Representations in Online Continual Graph Learning"
+  venue: Preprint
+  year: 2025
+  authors:
+  - G Donghi
+  - id:dzambon
+  - L Pasa
+  - id:calippi
+  - N Navarin
+  keywords:
+    - continual learning
+    - nonstationary environments
+  abstract: "Catastrophic forgetting is one of the main obstacles for Online Continual Graph Learning (OCGL), where nodes arrive one by one, distribution drifts may occur at any time and offline training on task-specific subgraphs is not feasible. In this work, we explore a surprisingly simple yet highly effective approach for OCGL: we use a fixed, randomly initialized encoder to generate robust and expressive node embeddings by aggregating neighborhood information, training online only a lightweight classifier. By freezing the encoder, we eliminate drifts of the representation parameters, a key source of forgetting, obtaining embeddings that are both expressive and stable. When evaluated across several OCGL benchmarks, despite its simplicity and lack of memory buffer, this approach yields consistent gains over state-of-the-art methods, with surprising improvements of up to 30% and performance often approaching that of the joint offline-training upper bound. These results suggest that in OCGL, catastrophic forgetting can be minimized without complex replay or regularization by embracing architectural simplicity and stability."
+  bibtex: >
+    @misc{donghi2025unreasonable,
+      title={The Unreasonable Effectiveness of Randomized Representations in Online Continual Graph Learning}, 
+      author={Donghi, Giovanni and Zambon, Daniele and Pasa, Luca and Alippi, Cesare and Navarin, Nicolò},
+      year={2025},
+      url={https://arxiv.org/abs/2510.06819}, 
+    }
+  links:
+    paper: https://arxiv.org/abs/2510.06819
+- title: "Online Continual Graph Learning"
+  venue: Preprint
+  year: 2025
+  authors:
+  - G Donghi
+  - L Pasa
+  - id:dzambon
+  - id:calippi
+  - N Navarin
+  keywords:
+    - continual learning
+    - nonstationary environments
+  abstract: "The aim of Continual Learning (CL) is to learn new tasks incrementally while avoiding catastrophic forgetting. Online Continual Learning (OCL) specifically focuses on learning efficiently from a continuous stream of data with shifting distribution. While recent studies explore Continual Learning on graphs exploiting Graph Neural Networks (GNNs), only few of them focus on a streaming setting. Yet, many real-world graphs evolve over time, often requiring timely and online predictions. Current approaches, however, are not well aligned with the standard OCL setting, partly due to the lack of a clear definition of online Continual Learning on graphs. In this work, we propose a general formulation for online Continual Learning on graphs, emphasizing the efficiency requirements on batch processing over the graph topology, and providing a well-defined setting for systematic model evaluation. Finally, we introduce a set of benchmarks and report the performance of several methods in the CL literature, adapted to our setting."
+  bibtex: >
+    @misc{donghi2025online,
+      title={Online Continual Graph Learning},
+      author={Giovanni Donghi and Luca Pasa and Daniele Zambon and Cesare Alippi and Nicol{\`o} Navarin},
+      year={2025},
+      url={https://arxiv.org/abs/2508.03283}
+    }
+  links:
+    paper: https://arxiv.org/abs/2508.03283
 - title: "Equilibrium Policy Generalization: A Reinforcement Learning Framework for Cross-Graph Zero-Shot Generalization in Pursuit-Evasion Games"
   venue: To appear in Advances in Neural Information Processing Systems
   year: 2025
