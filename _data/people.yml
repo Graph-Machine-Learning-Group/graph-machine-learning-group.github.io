@@ -112,6 +112,17 @@
     linkedin: miguel-nogales
     scholar: fswn8KQAAAAJ
   img: MN.jpg
+- id: gdonghi 
+  name: Giovanni
+  surname: Donghi
+  group: team
+  role: Ph.D. Student
+  description: His research focuses on efficient continual learning for graph data.
+  links:
+    github: giovannidonghi
+    linkedin: giovanni-donghi
+    scholar: JDkns5AAAAAJ
+  img: GD.jpg
 # AFFILIATE
 - id: slukovic
   name: Slobodan

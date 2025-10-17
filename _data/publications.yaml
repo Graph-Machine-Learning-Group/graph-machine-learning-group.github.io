@@ -3,11 +3,11 @@
   venue: Preprint
   year: 2025
   authors:
-  - G Donghi
+  - id:gdonghi
   - id:dzambon
-  - L Pasa
+  - L. Pasa
   - id:calippi
-  - N Navarin
+  - N. Navarin
   keywords:
     - continual learning
     - nonstationary environments
@@ -44,11 +44,11 @@
   venue: Preprint
   year: 2025
   authors:
-  - G Donghi
-  - L Pasa
+  - id:gdonghi
+  - L. Pasa
   - id:dzambon
   - id:calippi
-  - N Navarin
+  - N. Navarin
   keywords:
     - continual learning
     - nonstationary environments
