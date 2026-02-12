@@ -503,18 +503,31 @@
       volume = {36},
       year = {2023}
     }
-- title: Where and How to Improve Graph-based Spatio-Temporal Predictors
+- title: Assessment of Spatio-Temporal Predictors in the Presence of Missing and Heterogeneous Data
   links:
-    paper: https://arxiv.org/abs/2302.01701
-  venue: Preprint
-  year: 2023
+    paper: https://doi.org/10.1016/j.neucom.2026.132963
+    doi: https://doi.org/10.1016/j.neucom.2026.132963
+  venue: Neurocomputing
+  year: 2026
   authors:
   - id:dzambon
   - id:calippi
   keywords:
     - spatiotemporal data
     - residual analysis
-  abstract: This paper introduces a novel residual correlation analysis, called AZ-analysis, to assess the optimality of spatio-temporal predictive models. The proposed AZ-analysis constitutes a valuable asset for discovering and highlighting those space-time regions where the model can be improved with respect to performance. The AZ-analysis operates under very mild assumptions and is based on a spatio-temporal graph that encodes serial and functional dependencies in the data; asymptotically distribution-free summary statistics identify existing residual correlation in space and time regions, hence localizing time frames and/or communities of sensors, where the predictor can be improved.
+  abstract: Deep learning methods achieve remarkable predictive performance in modeling complex, large-scale data. However, assessing the quality of derived models has become increasingly challenging, as more classical statistical assumptions may no longer apply. These difficulties are particularly pronounced for spatio-temporal data, which exhibit dependencies across both space and time and are often characterized by nonlinear dynamics, time variance, and missing observations, hence calling for new accuracy assessment methodologies. This paper introduces a residual correlation analysis framework for assessing the optimality of spatio-temporal relational-enabled neural predictive models, notably in settings with incomplete and heterogeneous data. By leveraging the principle that residual correlation indicates information not captured by the model, enabling the identification and localization of regions in space and time where predictive performance can be improved. A strength of the proposed approach is that it operates under minimal assumptions, allowing for robust evaluation of deep learning models applied to multivariate time series, even in the presence of missing and heterogeneous data. In detail, the methodology constructs tailored spatio-temporal graphs to encode sparse spatial and temporal dependencies and employs asymptotically distribution-free summary statistics to detect time intervals and spatial regions where the model underperforms. The effectiveness of what proposed is demonstrated through experiments on both synthetic and real-world datasets using state-of-the-art predictive models.
+  bibtex: >
+    @article{zambon2026assessment,
+      title = {Assessment of Spatio-Temporal Predictors in the Presence of Missing and Heterogeneous Data},
+      author = {Zambon, Daniele and Alippi, Cesare},
+      volume = {675},
+      pages = {132963},
+      year = {2026},
+      issn = {0925-2312},
+      doi = {https://doi.org/10.1016/j.neucom.2026.132963},
+      url = {https://www.sciencedirect.com/science/article/pii/S0925231226003607},
+      journal = {Neurocomputing},
+    }
 - title: "Peak shaving in distribution networks using stationary energy storage systems: A Swiss case study"
   links:
     paper: https://www.sciencedirect.com/science/article/pii/S2352467723000267
