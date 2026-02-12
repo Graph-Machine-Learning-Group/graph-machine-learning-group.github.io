@@ -1,0 +1,166 @@
+---
+layout: particles_header
+title: Graph Deep Learning for Time Series and Spatiotemporal Data
+description: The GMLG tutorial on graph deep learning for time-series processing.
+venue: Winter School in Network Data Science and Artificial Intelligence 2026
+city: Lugano, Switzerland
+---
+<!-- Outline section-->
+<section>
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <p>
+                    Successful applications of <strong>deep learning</strong> in <strong>time series</strong> processing
+                    often involve training a single neural network on a collection of (related) time series.
+                    Pairwise relationships among time series can be modeled by considering a (possibly dynamic) graph
+                    spanning the collection. In this context, <strong>graph-based
+                        methods</strong> take the standard deep learning approach to time series processing a step
+                    forward.
+                    The recent theoretical and practical developments in graph machine learning make adopting such an
+                    approach particularly appealing and timely.
+
+                    The twofold <strong>objective</strong> of this tutorial is to:
+                <ol>
+                    <li>offer a <strong>comprehensive overview</strong> of the field, with a focus on forecasting
+                        applications;
+                    </li>
+                    <li>provide <strong>tools and guidelines</strong> to design and evaluate graph-based models for time
+                        series.
+                    </li>
+                </ol>
+                This tutorial is meant for early-career researchers and practitioners who wish to apply graph deep
+                learning methods to their time series processing applications.
+                At the same time, the tutorial provides experienced scholars with a coherent framing of the state of the art and new perspectives.
+                </p>
+            </div>
+            <div class="col-lg-8 text-center">
+                <h1>Material</h1>
+                <p>Download the slides used in our tutorial.</p>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <a class="w-75 btn btn-primary" href="https://drive.google.com/file/d/18tpZTHw-ZheWCeVLEgR9Nzo6USsY_O3_/view?usp=sharing" role="button" target="_blank">Download slides</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="w-75 btn btn-warning" href="https://github.com/TorchSpatiotemporal/tsl/blob/main/examples/notebooks/a_gentle_introduction_to_tsl.ipynb" role="button" target="_blank">Code demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- Location section-->
+<section class="text-white py-0"
+    style="background-image: url(./img/.jpg); background-attachment: fixed; background-size: cover; background-position: center;">
+    <div class="w-100 h-100 py-5" style="backdrop-filter: brightness(0.5) blur(3px);">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <p class="lead">
+                        This tutorial will be delivered at the <strong class="text-decoration-underline">Winter School in Network Data Science and Artificial Intelligence</strong>, held online <strong>from the 26th to the 29th of November
+                            2026</strong>, in Lugano, Switzerland, <strong>from the 9th to the 13th of February 2026</strong>.
+                    </p>
+                    <!-- <p class="lead">
+                            The USI-SUPSI PhD School in Applied Data Science and Artificial Intelligence organizes a week of advanced training dedicated to the latest statistical, computational, and machine learning methodologies for the analysis of dynamic, relational, and spatiotemporal data, 
+                    </p> -->
+                    <p class="lead">The tutorial will take place on Thursday, 12th of February</a>, 9:00-12:00.
+                    </p>
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+                        style="gap: 1.5em">
+                        <a class="btn btn-outline-light" href="https://www.supsi.ch/en/winter-school-in-network-data-science-and-artificial-intelligence" role="button"
+                            target="_blank">Winter school website</a>
+                        <!-- <div>
+                            <img src="./img/log-logo.png" height="182px" class="me-2" />
+                        </div> -->
+                        <a class="btn btn-outline-light" href="https://www.supsi.ch/documents/d/phd-datascience-ai/winter-school-2026-program"
+                            role="button" target="_blank">Winter school program</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Program section-->
+<section class="bg-light">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h1 class="text-center">Program</h1>
+                <h5 class="mt-3 mb-2 fw-light"><span class="fw-bold me-2">Part 1</span> Graph deep learning for time
+                    series processing.</h5>
+                <ol>
+                    <li><strong>Correlated time series</strong><br>
+                        Definition of the problem settings. Time series forecasting.
+                    </li>
+                    <li><strong>Graph deep learning for time series forecasting</strong><br>
+                        Graph-based framework for representing correlated time series. Graph-based models for time
+                        series forecasting.
+                        Similarities to and differences from related settings in time series analysis and temporal graph
+                        learning.
+                    </li>
+                    <li><strong>Spatiotemporal graph neural networks (STGNNs)</strong><br>
+                        Core components of a STGNN model. Recipes and strategies for building STGNNs. The
+                        time-then-space and time-and-space paradigms.
+                        Overview of architectures from the literature.
+                    </li>
+                    <li><strong>Global and local models</strong><br>
+                        Parameter sharing in time series models. Review of the global and local modeling paradigms with
+                        their strengths.
+                        Practical implications in graph-based time series processing. Hybrid global-local STGNN
+                        architectures. Transfer learning.
+                    </li>
+                </ol>
+                <h5 class="mt-3 mb-2 fw-light"><span class="fw-bold me-2">Part 2</span> Challenges and tools.</h5>
+                <ol>
+                    <li><strong>Latent graph learning</strong><br>
+                        Methods to apply the framework when no pre-defined graph is available. Learning graph structures
+                        from collections of time series.
+                    </li>
+                    <li><strong>Scalability</strong><br>
+                        Methods to enable scalability to large sensor networks.
+                    </li>
+                    <li><strong>Dealing with missing data</strong><br>
+                        The problem of missing data. Overview of methods for graph-based multivariate time series
+                        imputation and kriging.
+                    </li>
+                    <li><strong>Model quality assessment</strong><br>
+                        Statistical tools to test the optimality of graph-based predictors. Identification of time-space
+                        regions where predictions can be improved.
+                    </li>
+                </ol>
+                <h5 class="mt-3 mb-2 fw-light"><span class="fw-bold me-2">Demo</span> Coding Spatiotemporal GNNs</h5>
+                <p>Overview of open-source Pytorch libraries for graph-based time series processing. Torch
+                    Spatiotemporal demo.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Organizers section-->
+<section>
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h1>Organizers</h1>
+                <p class="lead">This tutorial is organized by the <a href=”{{site.url}}” class="fw-normal"
+                        target="_blank">GMLG Research
+                        Group</a> within the Swiss AI Lab <a href="https://idsia.ch" class="fw-normal"
+                        target="_blank">IDSIA</a> and <a href="https://usi.ch" class="fw-normal"
+                        target="_blank">Università della Svizzera italiana</a>, 
+                        with substantial contributions of 
+                        {% assign ac = people | where: "id", "acini" | first %}
+                        <a href="{{ac.links.website}}"><strong>Andrea Cini</strong></a>
+                        and 
+                        {% assign im = people | where: "id", "imarisca" | first %}
+                        <a href="{{im.links.website}}"><strong>Ivan Marisca</strong></a> 
+                        to the development of the content.</p>
+                
+                {% assign people = site.data.people %}
+                <div class="row g-4 my-4 justify-content-center align-items-center text-center text-md-start">
+                </div>
+                <div class="row g-4 my-4 justify-content-center align-items-top text-center">
+                    {% assign dz = people | where: "id", "dzambon" | first %}
+                    {% include people_item.html person=dz hide_description=true col_md=3 %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
