@@ -39,7 +39,7 @@ city: Lugano, Switzerland
                 <p>Download the slides used in our tutorial.</p>
                 <div class="row g-4 justify-content-center">
                     <div class="col-md-4">
-                        <a class="w-75 btn btn-primary" href="https://drive.google.com/file/d/18tpZTHw-ZheWCeVLEgR9Nzo6USsY_O3_/view?usp=sharing" role="button" target="_blank">Download slides</a>
+                        <a class="w-75 btn btn-primary" href="https://drive.google.com/uc?export=download&id=12jxNWVe_aP86FiUi8_zi7a_kg36oKJjE" role="button" target="_blank">Download slides</a>
                     </div>
                     <div class="col-md-4">
                         <a class="w-75 btn btn-warning" href="https://github.com/TorchSpatiotemporal/tsl/blob/main/examples/notebooks/a_gentle_introduction_to_tsl.ipynb" role="button" target="_blank">Code demo</a>
@@ -139,20 +139,7 @@ city: Lugano, Switzerland
     <div class="container px-4">
         <div class="row gx-4 justify-content-center">
             <div class="col-lg-8 text-center">
-                <h1>Organizers</h1>
-                <p class="lead">This tutorial is organized by the <a href=”{{site.url}}” class="fw-normal"
-                        target="_blank">GMLG Research
-                        Group</a> within the Swiss AI Lab <a href="https://idsia.ch" class="fw-normal"
-                        target="_blank">IDSIA</a> and <a href="https://usi.ch" class="fw-normal"
-                        target="_blank">Università della Svizzera italiana</a>, 
-                        with substantial contributions of 
-                        {% assign ac = people | where: "id", "acini" | first %}
-                        <a href="{{ac.links.website}}"><strong>Andrea Cini</strong></a>
-                        and 
-                        {% assign im = people | where: "id", "imarisca" | first %}
-                        <a href="{{im.links.website}}"><strong>Ivan Marisca</strong></a> 
-                        to the development of the content.</p>
-                
+                <h1>Speaker</h1>                
                 {% assign people = site.data.people %}
                 <div class="row g-4 my-4 justify-content-center align-items-center text-center text-md-start">
                 </div>
@@ -160,6 +147,18 @@ city: Lugano, Switzerland
                     {% assign dz = people | where: "id", "dzambon" | first %}
                     {% include people_item.html person=dz hide_description=true col_md=3 %}
                 </div>
+                <p class="lead">This tutorial is organized by the <a href=”{{site.url}}” class="fw-normal"
+                target="_blank">GMLG Research
+                Group</a> within the Swiss AI Lab <a href="https://idsia.ch" class="fw-normal"
+                target="_blank">IDSIA</a> and <a href="https://usi.ch" class="fw-normal"
+                target="_blank">Università della Svizzera italiana</a>, 
+                with substantial contributions of 
+                {% assign ac = people | where: "id", "acini" | first %}
+                <a href="{{ac.links.website}}"><strong>Andrea Cini</strong></a>
+                and 
+                {% assign im = people | where: "id", "imarisca" | first %}
+                <a href="{{im.links.website}}"><strong>Ivan Marisca</strong></a> 
+                to the development of the content.</p>
             </div>
         </div>
     </div>
