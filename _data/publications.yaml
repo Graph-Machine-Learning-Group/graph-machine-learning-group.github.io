@@ -1,4 +1,27 @@
 ---
+- title: "SWING: Unlocking Implicit Graph Representations for Graph Random Features"
+  venue: Preprint
+  year: 2026
+  authors:
+  - id:amanenti
+  - A. Dubey
+  - A. Sehanobish
+  - id:calippi
+  - K. Choromanski
+  keywords:
+    - scalability
+    - graph kernels
+    - random features
+  abstract: "We propose SWING: Space Walks for Implicit Network Graphs, a new class of algorithms for computations involving Graph Random Features on graphs given by implicit representations (i-graphs), where edge-weights are defined as bi-variate functions of feature vectors in the corresponding nodes. Those classes of graphs include several prominent examples, such as: ε-neighborhood graphs, used on regular basis in machine learning. Rather than conducting walks on graphs' nodes, those methods rely on walks in continuous spaces, in which those graphs are embedded. To accurately and efficiently approximate original combinatorial calculations, SWING applies customized Gumbel-softmax sampling mechanism with linearized kernels, obtained via random features coupled with importance sampling techniques. This algorithm is of its own interest. SWING relies on the deep connection between implicitly defined graphs and Fourier analysis, presented in this paper. SWING is accelerator-friendly and does not require input graph materialization. We provide detailed analysis of SWING and complement it with thorough experiments on different classes of i-graphs."
+  bibtex: >
+    @article{manenti2026swing,
+      title={SWING: Unlocking Implicit Graph Representations for Graph Random Features}, 
+      author={Manenti, Alessandro and Dubey, Avinava and Sehanobish, Arijit and Alippi, Cesare and Choromanski, Krzysztof},
+      journal={arXiv preprint arXiv:2602.12703},
+      year={2026}
+    }
+  links:
+    paper: https://arxiv.org/abs/2602.12703
 - title: "What Matters in Deep Learning for Time Series Forecasting?"
   venue: preprint
   year: 2025
@@ -95,6 +118,8 @@
       journal={arXiv preprint arXiv:2509.24728},
       year={2025}
     }
+  links:
+    paper: https://arxiv.org/abs/2509.24728
 - title: "Online Continual Graph Learning"
   venue: Preprint
   year: 2025
