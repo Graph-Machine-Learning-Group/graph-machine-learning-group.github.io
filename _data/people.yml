@@ -26,19 +26,6 @@
     twitter: dan_zambon
     scholar: JaQGQEwAAAAJ
   img: DZ.jpg
-- id: acini 
-  name: Andrea
-  surname: Cini
-  group: team
-  role: Post-doc Researcher
-  description: His research focuses on machine learning methods for time series analysis and graph processing.
-  links:
-    website: https://andreacini.github.io/
-    github: andreacini
-    twitter: andreacini1994
-    linkedin: andrea-cini
-    scholar: bQI2UIUAAAAJ
-  img: AC.jpg
 - id: imarisca 
   name: Ivan
   surname: Marisca
@@ -146,6 +133,19 @@
     scholar: nxoghS8AAAAJ
   img: AF.jpg
 # EXTERNAL
+- id: acini 
+  name: Andrea
+  surname: Cini
+  group: external
+  role: SNSF Postdoc at EPFL, Lausanne (Switzerland)
+  description: His research focuses on machine learning methods for time series analysis and graph processing.
+  links:
+    website: https://andreacini.github.io/
+    github: andreacini
+    twitter: andreacini1994
+    linkedin: andrea-cini
+    scholar: bQI2UIUAAAAJ
+  img: AC.jpg
 - id: fmbianchi
   name: Filippo Maria
   surname: Bianchi
