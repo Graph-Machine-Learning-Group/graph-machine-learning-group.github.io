@@ -1,3 +1,10 @@
+- date: 2026/05
+  text: >
+    Three papers accepted at <strong><a href="https://icml.cc/Conferences/2026">ICML 2026</a></strong>:
+    <a href="https://arxiv.org/abs/2512.22702">What Matters in Deep Learning for Time Series Forecasting?</a> (Moretti et al.), 
+    <a href="https://arxiv.org/abs/2509.24728">Beyond Softmax: A Natural Parameterization for Categorical Random Variables</a> (Manenti and Alippi)
+    and 
+    <a href="https://arxiv.org/abs/2602.12703">SWING: Unlocking Implicit Graph Representations for Graph Random Features</a> (Manenti et al).
 - date: 2026/02
   text: >
     Two new preprints out!

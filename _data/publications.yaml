@@ -1,6 +1,6 @@
 ---
 - title: "SWING: Unlocking Implicit Graph Representations for Graph Random Features"
-  venue: Preprint
+  venue: To appear in International Conference on Machine Learning
   year: 2026
   authors:
   - id:amanenti
@@ -23,7 +23,7 @@
   links:
     paper: https://arxiv.org/abs/2602.12703
 - title: "What Matters in Deep Learning for Time Series Forecasting?"
-  venue: preprint
+  venue: To appear in International Conference on Machine Learning
   year: 2025
   authors:
   - V. Moretti
@@ -100,7 +100,7 @@
   links:
     paper: https://arxiv.org/abs/2510.06819
 - title: "Beyond Softmax: A Natural Parameterization for Categorical Random Variables"
-  venue: Preprint
+  venue: To appear in International Conference on Machine Learning
   year: 2025
   authors:
   - id:amanenti
