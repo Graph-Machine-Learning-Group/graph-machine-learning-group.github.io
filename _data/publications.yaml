@@ -24,7 +24,7 @@
   links:
     paper: https://arxiv.org/abs/2602.17149
 - title: "SWING: Unlocking Implicit Graph Representations for Graph Random Features"
-  venue: To appear in International Conference on Machine Learning
+  venue: SPOTLIGHT at International Conference on Machine Learning
   year: 2026
   authors:
   - id:amanenti

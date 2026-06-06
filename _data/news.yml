@@ -1,3 +1,7 @@
+- date: 2026/06
+  text: >
+    We received a <strong>Spotlight</strong> at <strong><a href="https://icml.cc/Conferences/2026">ICML 2026</a></strong> with our paper
+    <a href="https://arxiv.org/abs/2602.12703">SWING: Unlocking Implicit Graph Representations for Graph Random Features</a> (Manenti et al).
 - date: 2026/05
   text: >
     Three papers accepted at <strong><a href="https://icml.cc/Conferences/2026">ICML 2026</a></strong>:
