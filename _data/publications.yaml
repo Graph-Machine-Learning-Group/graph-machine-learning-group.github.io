@@ -102,8 +102,8 @@
   links:
     paper: https://www.biorxiv.org/content/10.1101/2025.10.29.685326v1
 - title: "The Unreasonable Effectiveness of Randomized Representations in Online Continual Graph Learning"
-  venue: Preprint
-  year: 2025
+  venue: Machine Learning
+  year: 2026
   authors:
   - id:gdonghi
   - id:dzambon
@@ -115,14 +115,18 @@
     - nonstationary environments
   abstract: "Catastrophic forgetting is one of the main obstacles for Online Continual Graph Learning (OCGL), where nodes arrive one by one, distribution drifts may occur at any time and offline training on task-specific subgraphs is not feasible. In this work, we explore a surprisingly simple yet highly effective approach for OCGL: we use a fixed, randomly initialized encoder to generate robust and expressive node embeddings by aggregating neighborhood information, training online only a lightweight classifier. By freezing the encoder, we eliminate drifts of the representation parameters, a key source of forgetting, obtaining embeddings that are both expressive and stable. When evaluated across several OCGL benchmarks, despite its simplicity and lack of memory buffer, this approach yields consistent gains over state-of-the-art methods, with surprising improvements of up to 30% and performance often approaching that of the joint offline-training upper bound. These results suggest that in OCGL, catastrophic forgetting can be minimized without complex replay or regularization by embracing architectural simplicity and stability."
   bibtex: >
-    @misc{donghi2025unreasonable,
+    @article{donghi2026unreasonable,
       title={The Unreasonable Effectiveness of Randomized Representations in Online Continual Graph Learning}, 
       author={Donghi, Giovanni and Zambon, Daniele and Pasa, Luca and Alippi, Cesare and Navarin, Nicolò},
-      year={2025},
-      url={https://arxiv.org/abs/2510.06819}, 
+      year={2026},
+      volume={115},
+      number={9},
+      doi={10.1007/s10994-026-07128-5},
+      journal = {Machine Learning},
     }
   links:
     paper: https://arxiv.org/abs/2510.06819
+    doi: https://doi.org/10.1007/s10994-026-07128-5
 - title: "Beyond Softmax: A Natural Parameterization for Categorical Random Variables"
   venue: To appear in International Conference on Machine Learning
   year: 2025
