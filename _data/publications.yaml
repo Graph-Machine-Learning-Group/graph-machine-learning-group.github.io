@@ -1,4 +1,31 @@
 ---
+- title: "Continual Graph Multi-Agent Reinforcement Learning"
+  venue: Preprint
+  year: 2026
+  authors:
+  - id:tmarzi
+  - A. Hendawy
+  - J. Peters
+  - C. D'Eramo
+  - id:acini
+  - id:calippi
+  keywords:
+    - reinforcement learning
+    - multi-agent systems
+    - continual learning
+  abstract: "In Continual Multi-Agent Reinforcement Learning (CMARL), agents learn cooperative policies across sequences of tasks, aiming to adapt effectively to new tasks while preserving the ability to solve previously encountered ones. In many applications, tasks differ in their underlying structure, which can represent, for example, distinct operational conditions or target configurations (e.g., different network topologies in power grids or arrangements in formation control). Existing CMARL methods lack dedicated mechanisms to leverage this structural information when learning new tasks, failing to promote transfer and mitigate forgetting. To fill this gap, we propose Continual Graph Multi-Agent Reinforcement Learning (CGMARL), a novel framework for CMARL problems in which task sequences are mapped into a series of attributed graphs, each modeling a task-specific structure. In CGMARL, each graph determines the environment dynamics (next states and/or rewards) and the number of agents for the corresponding task. Then, we present Graph-based Formation (GRAFO), the first CGMARL benchmark, and show how forgetting arises in this setting. Finally, to address this limitation, we propose Frozen Graph Encoder (FROG), a method that relies on a frozen graph backbone to preserve past structural information in graph-based CMARL policies. Experiments on GRAFO show that pairing FROG with existing CL methods substantially improves performance on multiple CGMARL scenarios."
+  bibtex: >
+    @misc{marzi2026continualgraphmultiagentreinforcement,
+      title={Continual Graph Multi-Agent Reinforcement Learning}, 
+      author={Tommaso Marzi and Ahmed Hendawy and Jan Peters and Carlo D'Eramo and Andrea Cini and Cesare Alippi},
+      year={2026},
+      eprint={2610.10302},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2610.10302}, 
+    }
+  links:
+    paper: https://arxiv.org/abs/2610.10302
 - title: "Hyperbolic Graph Representation Learning for Differential Diagnosis on Biomedical Knowledge Graphs"
   venue: IAPR Workshop on Artificial Neural Networks in Pattern Recognition, 27-39
   year: 2026
@@ -227,6 +254,7 @@
   - id:acini
   keywords:
     - reinforcement learning
+    - multi-agent systems
     - relational inductive biases
     - graph neural networks
   abstract: Decentralized Multi-Agent Reinforcement Learning (MARL) methods allow for learning scalable multi-agent policies, but suffer from partial observability and induced non-stationarity. These challenges can be addressed by introducing mechanisms that facilitate coordination and high-level planning. Specifically, coordination and temporal abstraction can be achieved through communication (e.g., message passing) and Hierarchical Reinforcement Learning (HRL) approaches to decision-making. However, optimization issues limit the applicability of hierarchical policies to multi-agent systems. As such, the combination of these approaches has not been fully explored. To fill this void, we propose a novel and effective methodology for learning multi-agent hierarchies of message-passing policies. We adopt the feudal HRL framework and rely on a hierarchical graph structure for planning and coordination among agents. Agents at lower levels in the hierarchy receive goals from the upper levels and exchange messages with neighboring agents at the same level. To learn hierarchical multi-agent policies, we design a novel reward-assignment method based on training the lower-level policies to maximize the advantage function associated with the upper levels. Results on relevant benchmarks show that our method performs favorably compared to the state of the art.
