@@ -1,4 +1,30 @@
 ---
+- title: "Hyperbolic Graph Representation Learning for Differential Diagnosis on Biomedical Knowledge Graphs"
+  venue: IAPR Workshop on Artificial Neural Networks in Pattern Recognition, 27-39
+  year: 2026
+  authors:
+  - P. Miotto
+  - L. Mellini
+  - id:tmarzi
+  - id:calippi
+  - E. Casiraghi
+  - A. Paccanaro
+  - G. Valentini
+  - M. Soto-Gomez
+  keywords:
+    - knowledge graphs
+  abstract: "Biomedical knowledge graphs combine ontology-derived hierarchies with transversal associations among heterogeneous entities such as phenotypes, diseases, genes, proteins, and patients. This hybrid structure raises the question of whether hyperbolic embeddings, which naturally capture tree-like organization, remain useful beyond purely hierarchical graphs. We present a preliminary study of hyperbolic graph representation learning for Mendelian-disease differential diagnosis on a patient-integrated biomedical graph. Experiments on isolated ontology subgraphs show that hyperbolic models achieve strong performance in substantially lower dimensions than Euclidean baselines. We then evaluate the models on a link-prediction task that ranks candidate diseases for each patient. Results suggest that hyperbolic embeddings can exploit biomedical hierarchical structure while supporting diagnostic reasoning over heterogeneous patient-level graphs."
+  bibtex: >
+    @inproceedings{miotto2026hyperbolic,
+    title={Hyperbolic Graph Representation Learning for Differential Diagnosis on Biomedical Knowledge Graphs},
+    author={Miotto, Pietro and Mellini, Lucia and Marzi, Tommaso and Alippi, Cesare and Casiraghi, Elena and Paccanaro, Alberto and Valentini, Giorgio and Soto-Gomez, Mauricio},
+    booktitle={IAPR Workshop on Artificial Neural Networks in Pattern Recognition},
+    pages={27--39},
+    year={2026},
+    organization={Springer}
+    }
+  links:
+    paper: https://arxiv.org/abs/2609.18481
 - title: "TimeOmni-VL: Unified Models for Time Series Understanding and Generation"
   venue: To appear in International Conference on Machine Learning
   year: 2026
